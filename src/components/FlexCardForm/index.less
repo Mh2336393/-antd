@@ -1,0 +1,41 @@
+// @import '~@/common/styles/default';
+
+.title {
+  // color: @font-color-base;
+  margin-bottom: 10px;
+}
+
+.valueWrap {
+  // margin-bottom: 10px;
+  // color: @font-color-base;
+  min-height: 48px;
+
+  .component {
+    :global(.ant-input-number-input) {
+      height: 30px;
+    }
+
+    :global(.ant-input-number) {
+      height: 30px;
+      margin-right: 8px;
+    }
+  }
+
+  .value {
+    font-size: 32px;
+    vertical-align: middle;
+  }
+
+  .unit {
+    font-size: 24px;
+    vertical-align: middle;
+  }
+
+  .edit {
+    float: right;
+    height: 26px;
+    line-height: 36px;
+    // color: @font-color-blue;
+    cursor: pointer;
+  }
+}

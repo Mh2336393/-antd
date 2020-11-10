@@ -1,0 +1,115 @@
+[{
+        "字段名称": "tsLatest",
+        "字段名ZH": "告警时间",
+        "说明": "告警时间",
+        "GroupBy/OrderBy": ""
+    },
+    {
+        "字段名称": "name",
+        "字段名ZH": "事件名称",
+        "说明": "事件名称",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "signatureId",
+        "字段名ZH": "事件ID",
+        "说明": "事件ID",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "category_2",
+        "字段名ZH": "事件分类",
+        "说明": "威胁类型 分类",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "affectedAssets.ip",
+        "字段名ZH": "受影响资产",
+        "说明": "受影响资产",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "affectedAssets.ipMac",
+        "字段名ZH": "ipmac",
+        "说明": "ipmac",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "attackStage",
+        "字段名ZH": "攻击意图",
+        "说明": "攻击意图",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "attackResult",
+        "字段名ZH": "攻击结果",
+        "说明": "攻击结果",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "protocol",
+        "字段名ZH": "传输层协议",
+        "说明": "传输层协议",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "appProtocol",
+        "字段名ZH": "应用层协议",
+        "说明": "应用层协议",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "attackerIps",
+        "字段名ZH": "攻击者IP",
+        "说明": "攻击者IP",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "victimIps",
+        "字段名ZH": "受害者IP",
+        "说明": "受害者IP",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "src.ip",
+        "字段名ZH": "源IP",
+        "说明": "源IP",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "src.port",
+        "字段名ZH": "源端口",
+        "说明": "源端口",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "dst.ip",
+        "字段名ZH": "目的IP",
+        "说明": "目的IP",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "dst.port",
+        "字段名ZH": "目的端口",
+        "说明": "目的端口",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "score",
+        "字段名ZH": "事件级别",
+        "说明": "事件评分",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "status",
+        "字段名ZH": "状态",
+        "说明": "状态",
+        "GroupBy/OrderBy": "Y"
+    },
+    {
+        "字段名称": "originalIds",
+        "字段名ZH": "告警次数",
+        "说明": "原始日志ID",
+        "GroupBy/OrderBy": ""
+    }
+]

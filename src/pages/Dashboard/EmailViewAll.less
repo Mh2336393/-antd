@@ -1,0 +1,94 @@
+.TableTdPaddingWrap {
+    margin: -16px;
+}
+
+.emailHeader {
+    padding: 16px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: #fff;
+
+    :global(.ant-divider-vertical) {
+        margin: 0 15px;
+        background-color: #000;
+    }
+
+    span:first-child {
+        cursor: pointer;
+    }
+}
+
+.handleAction {
+    .tableAction {
+        display: block;
+    }
+
+    .formIcon {
+        display: inline-block;
+    }
+}
+
+.tableAction {
+    display: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+
+    .actionContent {
+        position: absolute;
+        z-index: 10;
+        left: 6px; // top:20px;
+        background: #fff;
+        border: 1px solid #cfd6e5;
+        width: 100px;
+        padding: 5px 10px;
+
+        p {
+            text-align: left;
+            margin: 0;
+            cursor: pointer;
+
+            a {
+                color: rgba(0, 0, 0, 0.65);
+            }
+
+            &:hover {
+                color: #2662ee;
+            }
+        }
+    }
+}
+
+.timeRangePicker {
+    border-top: 1px solid #d9deeb;
+    background-color: #fff;
+    padding: 12px 16px;
+}
+
+.timeRangeLabel {
+    padding-left: 22px;
+    margin-right: 10px;
+}
+
+.tableWrapper {
+    padding: 15px;
+    margin: 10px 25px; // margin-left 30px;
+    background-color: #fff;
+    border: 1px solid #d9deeb;
+}
+
+.popoverLimitHei {
+    :global(.ant-popover-inner-content) {
+        max-height: 180px;
+        overflow: auto;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    :global(.ant-popover-arrow) {
+        background-color: #fff;
+    }
+}

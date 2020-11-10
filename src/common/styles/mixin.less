@@ -1,0 +1,141 @@
+.mixin-icon-image(@url, @width: 19px, @height: 19px) {
+  display: inline-block;
+  width: @width;
+  height: @height;
+  margin-right: 4px;
+  vertical-align: middle;
+  background: url(@url) 0 0 no-repeat;
+}
+
+.ellipsis(@width) {
+  width: @width;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.imgBlock(@width, @height) {
+  width: @width;
+  height: @height;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
+// v2 version soc base font style
+.v2baseFont(@size: 13px, @color: #000000) {
+  font-family: 'PingFangSC MicrosoftYaHei';
+  font-size: @size;
+  color: @color;
+  line-height: 13px;
+}
+
+.commonBlueButton(@width: 100px, @height: 28px) {
+  display: inline-block;
+  min-width: @width;
+  height: @height;
+  line-height: @height;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #2662ee;
+  color: #e1e9fb;
+  cursor: pointer;
+}
+
+.commonWhiteButton(@width: 100px, @height: 28px) {
+  display: inline-block;
+  min-width: @width;
+  height: @height;
+  line-height: @height;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  color: #3d404e;
+  cursor: pointer;
+}
+
+.commonGrayButton-V2(@width: 100, @height: 28px) {
+  display: inline-block;
+  min-width: @width;
+  height: @height;
+  line-height: @height;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #e6e7eb;
+  border-radius: 0;
+  background-color: #e6e7eb;
+  color: #121212;
+  cursor: pointer;
+}
+
+.noBorderWhiteButton(@width: 100px, @height: 28px) {
+  display: inline-block;
+  width: @width;
+  height: @height;
+  line-height: @height;
+  text-align: center;
+  font-size: 14px;
+  background-color: #fff;
+  border: 0;
+  color: #8f909e;
+  cursor: pointer;
+  padding: 0;
+}
+
+.blueBtnHover {
+  background-color: #5089fa;
+  color: #e1e9fb;
+}
+
+.whiteBtnHover {
+  background-color: #f8f8fb;
+  border: 1px solid #d9d9d9;
+  color: #3d404e;
+}
+
+.btnDisable {
+  color: rgba(0, 0, 0, 0.25);
+  border: 1px solid #d9d9d9;
+  background-color: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.headerCustom(@height: 64px, @size: 20px, @weight: 500) {
+  position: relative;
+  width: 100%;
+  height: @height;
+  line-height: @height;
+  padding-left: 104px;
+  font-size: @size;
+  color: @font-color-base1;
+  border-bottom: 1px solid @border-color-lightGray;
+  background-color: #fff;
+  font-weight: @weight;
+}
+
+.titleCustom(@height: 64px, @size: 20px) {
+  width: 100%;
+  height: @height;
+  line-height: @height;
+  padding-left: 24px;
+  font-size: @size;
+  color: @font-color-base1;
+  border-bottom: 1px solid @border-color-lightGray;
+  background-color: #fff;
+}
+
+.dotIcon(@bgColor) {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+  background: @bgColor;
+}

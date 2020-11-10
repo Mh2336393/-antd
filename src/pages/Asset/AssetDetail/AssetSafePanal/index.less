@@ -1,0 +1,108 @@
+.safe_wrapper {
+  margin-top: 47px;
+
+  .header {
+    display       : flex;
+    flex-direction: row;
+    margin-bottom : 16px;
+    align-items   : center;
+
+    .time_panel {
+      margin-left: auto;
+      width: 85px;
+    }
+  }
+
+
+  .title {
+    font-size  : 14px;
+    color      : #000000;
+    font-weight: bold;
+  }
+
+  .content_wrapper {
+    display        : flex;
+    margin-top     : 12px;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+
+    .content_block {
+      height       : 240px;
+      width        : 49%;
+      border       : 1px solid #dcdee0;
+      border-radius: 0px;
+      padding      : 14px 0px 14px 20px;
+
+      .title {
+        font-size: 14px;
+        color    : rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .AnalysisOfState {
+      width        : 100%;
+      border       : 1px solid #dcdee0;
+      border-radius: 0px;
+      padding      : 14px 0px 14px 20px;
+      margin-top: 16px;
+      .title {
+        font-size: 14px;
+        color    : rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .failure_content {
+      height    : ~'calc(100% - 22px)';
+      // margin-top: 10px;
+
+      .safe_logo {
+        background-image: url(../../../../assets/images/assets/safe.svg);
+        height          : 48px;
+        width           : 48px;
+      }
+
+      .dangerous_logo {
+        background-image: url(../../../../assets/images/assets/dangerous.svg);
+        height          : 48px;
+        width           : 48px;
+      }
+
+      .title_header {
+        font-size  : 18px;
+        color      : #18191a;
+        font-weight: 500;
+      }
+
+      .subtitle_header {
+        font-size: 12px;
+        color    : rgba(0, 0, 0, 0.5);
+      }
+
+      .timeLine {
+        margin-top: 10px;
+
+        :global {
+          .ant-timeline-item {
+            font-size: 12px;
+            color    : rgba(0, 0, 0, 0.85);
+            padding  : 0px 0px 3px 0px;
+          }
+        }
+
+        .text {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .event_content {
+      height: ~'calc(100% - 22px)';
+      margin: 24px 20px 0px 0px;
+
+      .event_header {
+        font-size: 12px;
+        color    : rgba(0, 0, 0, 0.85);
+      }
+    }
+  }
+}

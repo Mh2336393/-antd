@@ -1,0 +1,163 @@
+.TableTdPaddingWrap {
+    // margin: -16px;
+}
+
+.dnsHeader {
+    padding         : 16px;
+    background-color: #fff;
+
+    // :global(.ant-divider-vertical) {
+    //     margin          : 0 15px;
+    //     background-color: #000;
+    // }
+
+    span:first-child {
+        cursor: pointer;
+    }
+}
+
+.accountBlock {
+    border: 1px solid #e8e8e8;
+
+    .accountSource {
+        width  : '100%';
+        height : 550px;
+        display: flex;
+        padding: 14px;
+    }
+
+    .header {
+        background     : transparent;
+        border-bottom  : 1px solid #e8e8e8;
+        padding        : 0 24px;
+        border-radius  : 2px 2px 0 0;
+        zoom           : 1;
+        margin-bottom  : -1px;
+        min-height     : 48px;
+        font-size      : 16px;
+        color          : #54576a;
+        font-weight    : 500;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        a {
+            font-size  : 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.timeRangePicker {
+    border-top      : 1px solid #d9deeb;
+    background-color: #fff;
+    padding         : 12px 0;
+}
+
+.timeRangeLabel {
+    padding-left: 22px;
+    margin-right: 10px;
+}
+
+.tableWrapper {
+    padding         : 15px;
+    margin          : 10px 25px; // margin-left 30px;
+    background-color: #fff;
+    border          : 1px solid #d9deeb;
+}
+
+.handleAction {
+    .tableAction {
+        display: block;
+    }
+
+    .formIcon {
+        display: inline-block;
+    }
+}
+
+.tableAction {
+    display : none;
+    width   : 20px;
+    height  : 20px;
+    cursor  : pointer;
+    position: relative;
+
+    .actionContent {
+        position  : absolute;
+        z-index   : 10;
+        left      : 6px; // top:20px;
+        background: #fff;
+        border    : 1px solid #cfd6e5;
+        width     : 150px;
+        padding   : 5px 10px;
+
+        p {
+            text-align: left;
+            margin    : 0;
+            cursor    : pointer;
+
+            a {
+                // color: rgba(0, 0, 0, 0.65);
+            }
+
+            &:hover {
+                color: #2662ee;
+            }
+        }
+    }
+}
+
+.showMore {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.popoverLimitHei {
+    // :global(.ant-popover-inner-content) {
+    //     max-height: 180px;
+    //     overflow  : auto;
+
+    //     p {
+    //         margin-bottom: 10px;
+    //     }
+    // }
+
+    // :global(.ant-popover-arrow) {
+    //     background-color: #fff;
+    // }
+}
+
+.serchBtns {
+    background-color: #fff;
+    padding         : 24px 0;
+    border-top      : 1px solid #d9deeb;
+}
+
+.locationSpan {
+    display            : inline-block;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    background-position: center;
+    padding            : 10px;
+    vertical-align     : top;
+    margin-right       : 4px;
+}
+
+// 爆破模块，导航栏演示调整
+.blastingNavigationBar {
+    position       : relative;
+    display        : flex;
+    justify-content: space-between;
+    height         : 33px;
+    overflow       : hidden;
+    align-items: center;
+}
+
+.paginationPos {
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}

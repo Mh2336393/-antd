@@ -1,0 +1,65 @@
+// @import '~@/common/styles/mixin';
+@import '~@/utils.less';
+
+.add-filter {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.info-block {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.filter-block {
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.filter-item {
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-content {
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+
+    :global(.ant-form-item) {
+        margin-bottom: 0;
+    }
+}
+
+.delete-btn {
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(232, 83, 83);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.addFilterWrap {
+    margin-top: -19px;
+}
+
+:global {
+    .helpTooltip .ant-tooltip-content {
+        width: 500px !important;
+    }
+}
+
+.iconHelp {
+    .mixin-icon-image('./assets/image/icon_help.png', 16px, 16px); // vertical-align: bottom;
+}

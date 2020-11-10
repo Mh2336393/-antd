@@ -1,0 +1,124 @@
+@import '~@/utils.less';
+
+.titleBlock {
+  width: 100%;
+  padding: 0px 0px 0px 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid @border-color-gray;
+  background-color: #fff;
+  position: relative;
+  // top: 46px;
+  z-index: 999;
+  width: 100%;
+}
+
+.chartBlock {
+  padding: 20px 24px;
+  background: #fff;
+  margin: 10px 10px 0 2px;
+}
+
+.tableBlock {
+  margin: 12px 12px 12px 2px;
+  padding: 24px 24px 12px 24px;
+  background: #fff;
+  table{
+    font-size: 12px;
+    td{
+      overflow     : hidden;
+      white-space  : nowrap;
+    }
+  }
+  :global{
+    .ant-table-fixed-right{
+      width: 100px;
+    }
+  }
+}
+
+.titleStyle {
+  width: 120px;
+  margin-right: 40px;
+  font-size: 20px;
+  margin: 0;
+  font-size: 20px;
+  // color: @font-color-base1;
+}
+
+.settingBlock {
+  cursor: pointer;
+  padding: 3px 6px;
+
+  &:hover {
+    // border: 1px solid @border-color-gray;
+    border-radius: 3px;
+    background: #eee;
+  }
+
+  .settingBtn {
+    // .mixin-icon-image('./assets/images/manage.svg', 18px, 18px);
+    padding: 0 10px;
+    margin-right: 4px;
+    background: url('../../../assets/images/manage.svg') 0 0 no-repeat;
+  }
+}
+
+.selected {
+  display: flex;
+  padding: 4px 6px;
+  border-radius: 10px;
+  margin: 4px 8px;
+  background: #fafbfc;
+  // font-family: PingFangSC-Regular;
+  font-size: 12px;
+  line-height: 16px;
+  i{
+    margin-top: 6px;
+  }
+}
+
+.selectItem {
+  display: inline-block;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 9px;
+}
+
+.selectedList {
+  // display: flex;
+  // margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filteredList {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 12px;
+}
+.event_count {
+  background: #f8e8e8;
+  border: 1px solid #c93439;
+  border-radius: 12.5px;
+  font-size: 12px;
+  color: #ba252a;
+  line-height: 16px;
+  padding: 0px 10px;
+}
+#components-table-demo-resizable-column .react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+#components-table-demo-resizable-column .react-resizable-handle {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  bottom: 0;
+  right: -5px;
+  cursor: col-resize;
+  z-index: 999;
+}

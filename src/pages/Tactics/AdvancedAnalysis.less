@@ -1,0 +1,141 @@
+@import '~@/utils.less';
+
+.tableBlock {
+  margin: 12px 12px 12px 2px;
+  padding: 24px 24px 12px 24px;
+  background: #fff;
+}
+
+:global {
+  .AdvancedAnalysis .ant-table-body {
+    // min-height: 800px !important;
+    // padding-bottom: 520px !important;
+  }
+
+  // 表格分组图标去掉定位
+  .AdvancedAnalysis .ant-table-thead > tr > th .anticon-filter,
+  .ant-table-thead > tr > th .ant-table-filter-icon {
+    position: relative;
+  }
+
+  .AdvancedAnalysis .ant-table-thead > tr > th .anticon-filter > svg,
+  .ant-table-thead > tr > th .ant-table-filter-icon > svg {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .AdvancedAnalysis .testingCurveTitle {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #6c6e70;
+  }
+
+  .measuringStateBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .measuringStateLeft {
+    width: 100px;
+  }
+
+  .measuringStateLeft .custom {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8px;
+    vertical-align: top;
+    margin-right: 5px;
+    background-image: url(../../assets/images/yzcs16.svg);
+  }
+
+  .measuringStateLeft .ai {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8px;
+    vertical-align: top;
+    margin-right: 5px;
+    background-image: url(../../assets/images/aice16.svg);
+  }
+
+  .measuringStateLeft .observe {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8px;
+    vertical-align: top;
+    margin-right: 5px;
+    background-image: url(../../assets/images/observe.svg);
+  }
+
+  .measuringStateLeft .textA {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #6c6e70;
+    line-height: 22px;
+  }
+
+  .measuringStateRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .AdvancedAnalysis .ant-row {
+    padding-bottom: 0 !important;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .titleRender {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 24px;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 5px 20px 5px 0;
+  }
+
+  .titleRender .title {
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .titleRender .contentBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .titleRender .itemA {
+    margin-right: 10px;
+  }
+
+  .titleRender .itemB {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #18191a;
+  }
+
+  .titleRender .itemB .red {
+    color: red;
+  }
+
+  .AdvancedAnalysis .filterWrap {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .cardDetails {
+  }
+}

@@ -1,0 +1,121 @@
+.userText {
+  overflow: hidden;
+
+  .showText,
+  .showIcon {
+    float: left;
+  }
+}
+
+.tableAction {
+  position: relative;
+
+  .showIcon {
+    visibility: hidden;
+    cursor: pointer;
+    margin: 0 0 0 8px;
+  }
+
+  .userInput {
+    display: none;
+    width: 120px;
+  }
+}
+
+.handleAction {
+  .tableAction {
+    .showIcon {
+      visibility: visible;
+    }
+
+    .userInput {
+      display: block;
+    }
+
+    .userText.noUserText {
+      display: none;
+    }
+  }
+}
+
+.contentWrap {
+  margin: 12px auto 0;
+  width: 1000px;
+  padding: 24px 60px;
+  background: #fff;
+
+  .title4 {
+    font-size: 13px;
+    color: #3d404e;
+    font-weight: bolder;
+    line-height: 32px;
+  }
+
+  .rowBlock {
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0 30px;
+    padding-bottom: 10px;
+
+    p {
+      line-height: 32px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.bootstrap_wrapper {
+  .topDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 16px;
+  }
+
+  .delA {
+    // position: absolute;
+    // right: 40px;
+    // top: 50%;
+    color: #f00;
+  }
+
+  .box {
+    // width: 100%;
+    position: relative;
+    border: 1px solid #dcdcdc;
+    padding: 10px 40px 10px 40px;
+    margin-bottom: 24px;
+
+    :global {
+      .ant-form-item-control {
+        line-height: 0;
+      }
+
+      .ant-form-item {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.spanInput {
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 4px 11px;
+  width: 100%;
+  // height: 32px;
+  font-size: 14px;
+  // line-height: 1.5;
+  //   color: #54576a;
+  //   background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  background-color: #f5f5f5;
+  // border-radius: 4px;
+  height: auto;
+  line-height: 22px;
+  word-break: break-all;
+  color: rgba(0, 0, 0, 0.25);
+}

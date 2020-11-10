@@ -1,0 +1,126 @@
+.wrapper {
+  margin-top: 47px;
+  :global {
+    .ant-descriptions-title {
+      font-family: 'PingFangSC-Semibold';
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 14px;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-view {
+      border: 1px solid #dcdee0;
+      border-radius: 0px;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label {
+      background: #fff;
+    }
+
+    .ant-descriptions-item-label ant-descriptions-item-colon {
+      &::after {
+        content: ':';
+      }
+    }
+
+    .ant-descriptions-item-label {
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-content {
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: rgba(0, 0, 0, 1);
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label,
+    .ant-descriptions-bordered .ant-descriptions-item-content {
+      border-right: none;
+    }
+  }
+
+  .port_panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    position: relative;
+
+    .port_arrow_down {
+      position: absolute;
+      right: 12px;
+      top: 5px;
+      cursor: pointer;
+    }
+
+    .port_wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 2px;
+      height: 22px;
+      margin: 0px 12px 8px 0px;
+      overflow: hidden;
+
+      .port {
+        font-size: 12px;
+        color: #000;
+        padding: 0px 6px;
+      }
+
+      .port_message {
+        color: #fff;
+        font-size: 12px;
+        padding: 0px 3px;
+        height: 100%;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.popover_wrapper {
+  max-width: 160px;
+  height: 80px;
+
+  :global {
+    .ant-descriptions-item-label {
+      font-family: 'PingFangSC-Regular';
+      font-size: 12px;
+      color: #666;
+    }
+
+    .ant-descriptions-item-content {
+      color: #000;
+      font-size: 12px;
+    }
+  }
+}
+
+.component_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .component {
+    display: flex;
+    flex-direction: row;
+    margin-right: 18px;
+
+    .component_title {
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #000000;
+      margin-right: 6px;
+    }
+
+    .component_version {
+      background: #dcdee0;
+      border-radius: 25px;
+    }
+  }
+}

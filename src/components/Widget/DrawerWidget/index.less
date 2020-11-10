@@ -1,0 +1,40 @@
+.drawer_widget {
+  :global {
+    .ant-drawer-header {
+      padding: 13px 20px;
+    }
+
+    .ant-drawer-body {
+      background: #fff;
+      height: ~'calc(100% - 52px)';
+      position: relative;
+      box-sizing: border-box;
+      overflow-y: hidden;
+      padding: 0;
+    }
+
+    .ant-drawer-wrapper-body {
+      height: 100%;
+    }
+  }
+
+  .drawer_content {
+    height: 100%;
+    position: relative;
+    overflow: auto;
+  }
+
+  .action_wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 49px;
+    border-top: 1px solid #e6e7eb;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 10px;
+    background: #fff;
+  }
+}

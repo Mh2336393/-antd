@@ -1,0 +1,56 @@
+// @import '~@/common/styles/default';
+@import '~@/utils.less';
+
+.contentWrap {
+    padding: 10px 0 20px;
+    border: 1px solid @border-color-common;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    height: 300px;
+}
+
+.allList {
+    overflow-y: auto;
+    padding: 0 20px;
+    border-right: 1px solid @border-color-common;
+
+    :global(.ant-checkbox-group-item) {
+        display: flex;
+        margin: 6px 0;
+
+        span:first-child {
+            margin-top: 5px;
+        }
+
+        span:last-child {
+            word-break: break-all;
+        }
+    }
+}
+
+.pickedList {
+    padding: 0 20px;
+    overflow-y: auto;
+
+    :global(.ant-table-tbody > tr) {
+        cursor: pointer !important;
+    }
+}
+
+.selectNum {
+    color: @font-color-blue;
+}
+
+.infoLabel {
+    color: @font-color-lightGray;
+}
+
+.infoVal {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

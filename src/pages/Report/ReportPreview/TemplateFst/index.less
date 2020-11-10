@@ -1,0 +1,208 @@
+@import '~@/utils.less';
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body,
+html {
+  margin: 0;
+  color: #000;
+  background: #eceff5;
+  width: 100%;
+  height: 100%;
+}
+
+body,
+button,
+html,
+input {
+  padding: 0;
+  font: 14px/1.5 Microsoft YaHei, Tahoma, sans-serif;
+  color: #54576a;
+}
+
+body {
+  width: 794px;
+  margin: 0 auto;
+}
+
+.clearFloat {
+  overflow: hidden;
+}
+
+.yjPage {
+  width: 794px;
+  min-height: 1123px; // padding: 32px 40px;
+  padding: 0 40px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.yjPage:first-child {
+  padding-top: 32px;
+}
+
+.yjFrontPage {
+  margin-bottom: 80px;
+  font: 14px/1.5 Microsoft YaHei, Tahoma, sans-serif;
+  color: #54576a;
+}
+
+.frontPageLogo {
+  width: 200px;
+  height: 140px;
+  // margin-top: 50px;
+  // margin-left: 60px;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
+}
+
+.reportLogo {
+  width: 200px;
+  height: 66px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.frontPageTitle {
+  // width: 350px;
+  // height: 100px;
+  margin-left: 60px;
+  margin-top: 140px;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 2px;
+  color: #54576a;
+}
+
+.frontPageTimeRange {
+  margin-left: 60px;
+  margin-top: 20px;
+
+  .timeRangeTitle {
+    padding: 3px 11px;
+    margin-right: 15px;
+    color: white;
+    background-color: #2662ee;
+  }
+}
+
+.frontPageFooter {
+  margin-left: 60px;
+  margin-top: 400px;
+}
+
+.yjPageHeader {
+  border-bottom: 1px solid #ccc;
+  color: #999;
+  font-size: 15px;
+  overflow: hidden; // margin-top: 20px;
+  padding-top: 20px;
+
+  .headerImg {
+    float: left;
+    width: 100px;
+    height: 30px;
+    background: url('../../../../assets/logo.png') no-repeat 0 0;
+  }
+
+  .headerTitle {
+    float: right;
+  }
+}
+
+.titleOneLevel {
+  font-size: 15px;
+  color: @report-title-blue;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.infoBlock {
+  margin: 26px 0;
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+.yiPageContent {
+  padding: 25px 0;
+
+  .pageTitle {
+    color: @report-title-blue;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .pageContent {
+    margin-top: 30px;
+
+    .pageContentTitle {
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+.pageContentWrapper {
+  .sysBasicChart {
+    float: left;
+    width: 357px;
+
+    .sysBasicChartTooltip {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+:global {
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 4px 4px; // font-size: 12px;
+  }
+}
+
+.chartTitle {
+  margin-bottom: -15px;
+}
+
+.popoverCxt {
+  width: 220px;
+  font-size: 12px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.iocTag {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #f5222d;
+  border-radius: 5px;
+  color: #f5222d;
+}
+
+.iocTagLink {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #f5222d;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f5222d;
+}

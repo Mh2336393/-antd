@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/危险</title>
+    <g id="icon/危险" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="15" height="15"></rect>
+        <path d="M7.5,0 C3.35825893,0 0,3.35825893 0,7.5 C0,11.6417411 3.35825893,15 7.5,15 C11.6417411,15 15,11.6417411 15,7.5 C15,3.35825893 11.6417411,0 7.5,0 Z" id="形状" fill="#C93439"></path>
+        <path d="M7.5,10 C7.77604167,10 8,10.2239583 8,10.5 C8,10.7760417 7.77604167,11 7.5,11 C7.22395833,11 7,10.7760417 7,10.5 C7,10.2239583 7.22395833,10 7.5,10 Z M8,4 L8,9 L7,9 L7,4 L8,4 Z" id="形状结合" fill="#FFFFFF"></path>
+    </g>
+</svg>

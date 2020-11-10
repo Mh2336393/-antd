@@ -1,0 +1,116 @@
+:global {
+    .sceneDetailsCardBox {
+        border: none;
+
+        .ant-card-meta-title {
+            font-family: PingFangSC-Semibold;
+            font-size  : 14px;
+            color      : #FFFFFF;
+        }
+
+        .testingCurveTitle {
+            font-family  : PingFangSC-Regular;
+            font-size    : 12px;
+            color        : #6C6E70;
+            margin-bottom: 20px;
+            ;
+            text-align: left;
+        }
+
+        .ant-card-meta-description {
+            opacity    : 0.8;
+            font-family: PingFangSC-Regular;
+            font-size  : 12px;
+            color      : #FFFFFF;
+        }
+
+        .ant-card-head {
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .ant-card-bordered {
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        .bg {
+            opacity      : 0.6;
+            background   : #FFFFFF;
+            border-radius: 13px;
+            padding      : 2px 8px;
+
+            .des {
+                font-family: PingFangSC-Regular;
+                font-size  : 12px;
+                line-height: 18px;
+            }
+        }
+
+        .ant-steps-item-title {
+            width      : 100%;
+            text-align : left;
+            font-family: PingFangSC-Regular;
+            font-size  : 12px;
+            color      : #18191a;
+            line-height: 2;
+        }
+
+        .ant-steps-item-description {
+            position : absolute;
+            right    : 0;
+            padding  : 0;
+            top      : 4px;
+            font-size: 12px;
+        }
+
+        .ant-steps-item-finish .ant-steps-item-description::before {
+            content            : '';
+            background-image   : url(../../../../assets/images/complete.svg);
+            background-repeat  : no-repeat;
+            background-position: 0 0;
+            background-size    : contain;
+            position           : absolute;
+            left               : -20px;
+            width              : 18px;
+            height             : 18px;
+        }
+
+        .ant-steps-item-finish.lastStep .ant-steps-item-description::before {
+            content            : '';
+            background-image   : url(../../../../assets/images/zzcs.svg);
+            background-repeat  : no-repeat;
+            background-position: 0 0;
+            background-size    : contain;
+            position           : absolute;
+            left               : -20px;
+            width              : 18px;
+            height             : 18px;
+            -webkit-animation  : loadingCircle 1s infinite linear;
+            animation          : loadingCircle 1s infinite linear;
+            transform-origin   : center center;
+
+        }
+
+        @keyframes loadingCircle {
+            animation-duration       : 1s;
+            animation-timing-function: linear;
+            animation-delay          : 0s;
+            animation-iteration-count: infinite;
+            animation-direction      : normal;
+            animation-fill-mode      : none;
+            animation-play-state     : running;
+            animation-name           : loadingCircle;
+        }
+
+
+
+
+
+        .ant-steps-item-error .ant-steps-item-description::before {
+            content : url(../../../../assets/images/wx.svg);
+            position: absolute;
+            left    : -20px;
+            top     : 2px;
+        }
+
+    }
+}

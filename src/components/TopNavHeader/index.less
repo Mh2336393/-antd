@@ -1,0 +1,93 @@
+@import '~antd/lib/style/themes/default.less';
+
+.head {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  transition: background 0.3s, width 0.2s;
+
+  :global {
+    .ant-menu-submenu.ant-menu-submenu-horizontal {
+      height: 100%;
+      line-height: 48px;
+
+      .ant-menu-submenu-title {
+        height: 100%;
+        padding: 0 18px;
+      }
+    }
+  }
+
+  &.light {
+    background-color: #fff;
+  }
+
+  .main {
+    display: flex;
+    height: 48px;
+    padding-left: 24px;
+
+    &.wide {
+      // max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .left {
+      display: flex;
+      flex: 1;
+    }
+
+    .right {
+      width: 324px;
+    }
+  }
+}
+
+.logo {
+  position: relative;
+  // width: 362px;
+  width: 276px;
+  height: 48px;
+  overflow: hidden;
+  line-height: 48px;
+  transition: all 0.3s;
+
+  img {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+  }
+
+  h1 {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    vertical-align: top;
+  }
+}
+
+.logoImg {
+  width: 29px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.light {
+  h1 {
+    color: #002140;
+  }
+}
+
+.menu {
+  height: 48px;
+  line-height: 48px;
+  border: none;
+}

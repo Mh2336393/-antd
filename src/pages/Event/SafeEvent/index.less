@@ -1,0 +1,229 @@
+.handleBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.handleItem {
+  margin-right: 10px;
+}
+
+.handleBar {
+  display: flex;
+  justify-content: space-between;
+  // width: 360px;
+}
+
+.fullScreenStyle {
+  font-size: 28px;
+  color: #2662ee;
+  cursor: pointer;
+}
+
+.contentwrap {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.filterwrap {
+  // border-bottom: 1px solid #d9deeb;
+  background: #fff;
+  padding: 9px 0;
+}
+
+.handleAction {
+  .tableAction {
+    display: block;
+  }
+}
+
+.tableAction {
+  display: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+
+  .actionContent {
+    position: absolute;
+    z-index: 10;
+    left: 6px; // top:20px;
+    background: #fff;
+    border: 1px solid #cfd6e5;
+    width: 60px;
+    padding: 5px 10px;
+
+    p {
+      text-align: left;
+      margin: 0;
+      cursor: pointer;
+
+      a {
+        color: rgba(0, 0, 0, 0.65);
+      }
+
+      &:hover {
+        color: #2662ee;
+      }
+    }
+  }
+}
+
+.eventOverviewWrap {
+  p {
+    margin: 0;
+  }
+}
+
+.eventOverviewWrap table tr th,
+.eventOverviewWrap table tr td,
+.eventInvasionWrap table tr th,
+.eventInvasionWrap table tr td,
+.propertyRiskRightCol .propertyRiskRight table tr th,
+.propertyRiskRightCol .propertyRiskRight table tr td {
+  padding: 12px 8px;
+}
+
+.closeFilter {
+  background: #f1f1f1;
+  cursor: pointer;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+:global {
+  .ant-table-tbody {
+    p {
+      margin: 0;
+    }
+  }
+
+  //伸缩列样式
+  .react-resizable {
+    position: relative;
+    background-clip: padding-box;
+  }
+
+  .react-resizable-handle {
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    bottom: 0;
+    right: -5px;
+    cursor: col-resize;
+    z-index: 1;
+  }
+
+  
+  .ant-table-row-cell-last{
+    .ant-table-header-column{
+       min-width: 100px !important
+    }
+  }
+     
+  // .ant-table-scroll table {
+  //   min-width: 110%;
+  // }
+}
+  
+.popoverCxt {
+  width: 220px;
+  font-size: 12px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.iocTag {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #f5222d;
+  border-radius: 5px;
+  color: #f5222d;
+}
+
+.iocTagLink {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #f5222d;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f5222d;
+}
+
+.popoverLimitHei {
+  :global(.ant-popover-inner-content) {
+    max-height: 170px;
+    overflow: auto;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  :global(.ant-popover-arrow) {
+    background-color: #fff;
+  }
+}
+
+.backHeader {
+  padding: 5px 20px;
+}
+
+.back {
+  padding: 0 5px;
+  border-right: 1px solid #54576a;
+  cursor: pointer;
+}
+
+.title {
+  padding: 0 5px;
+}
+
+.statusSpanTag {
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+
+.detailStatusSpan {
+  // margin-right: 8px;
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.detailTopName {
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  max-width: 810px;
+  padding-right: 8px;
+  font-size: 20px;
+}
+
+.detailScoreTag {
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+#components-table-demo-resizable-column .react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+#components-table-demo-resizable-column .react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  bottom: 0;
+  right: -5px;
+  cursor: col-resize;
+  z-index: 1;
+}

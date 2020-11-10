@@ -1,0 +1,43 @@
+.wrapper {
+  margin-top: 47px;
+  :global {
+    .ant-descriptions-title {
+      font-family: 'PingFangSC-Semibold';
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 14px;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-view {
+      border: 1px solid #dcdee0;
+      border-radius: 0px;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label {
+      background: #fff;
+    }
+
+    .ant-descriptions-item-label ant-descriptions-item-colon {
+      &::after {
+        content: ':';
+      }
+    }
+
+    .ant-descriptions-item-label {
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-content {
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: rgba(0, 0, 0, 1);
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label,
+    .ant-descriptions-bordered .ant-descriptions-item-content {
+      border-right: none;
+    }
+  }
+}

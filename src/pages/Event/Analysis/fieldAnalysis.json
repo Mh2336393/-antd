@@ -1,0 +1,65 @@
+[
+  {
+    "字段名称": "alert_mode",
+    "字段名ZH": "告警模式",
+    "说明": "告警模式",
+    "GroupBy/OrderBy": "Y"
+  },
+  {
+    "字段名称": "asset_ip",
+    "字段名ZH": "资产IP",
+    "说明": "资产IP",
+    "GroupBy/OrderBy": "Y"
+  },
+  {
+    "字段名称": "alert.signature",
+    "字段名ZH": "告警事件名称",
+    "说明": "告警事件名称",
+    "GroupBy/OrderBy": "Y"
+  },
+  {
+    "字段名称": "alert.category",
+    "字段名ZH": "告警类型",
+    "说明": "告警类型",
+    "GroupBy/OrderBy": "Y"
+  },
+  {
+    "字段名称": "app_proto",
+    "字段名ZH": "应用层协议",
+    "说明": "应用层协议",
+    "GroupBy/OrderBy": "Y"
+  },
+
+  {
+    "字段名称": "proto",
+    "字段名ZH": "网络层协议",
+    "说明": "网络层协议",
+    "GroupBy/OrderBy": "Y"
+  },
+  {
+    "字段名称": "alert.threshold",
+    "字段名ZH": "阈值",
+    "说明": "阈值",
+    "GroupBy/OrderBy": ""
+  },
+  {
+    "字段名称": "alert.actual_value",
+    "字段名ZH": "实际值",
+    "说明": "实际值",
+    "GroupBy/OrderBy": ""
+  },
+  {
+    "字段名称": "alert.over_range",
+    "字段名ZH": "偏离程度",
+    "说明": "偏离程度",
+    "GroupBy/OrderBy": ""
+  },
+  {
+    "字段名称": "timestamp",
+    "字段名ZH": "发生时间",
+    "说明": "发生时间",
+    "GroupBy/OrderBy": ""
+  }
+
+
+]

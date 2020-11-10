@@ -1,0 +1,255 @@
+// @import '~@/common/styles/default';
+// @import '~@/common/styles/mixin';
+@import '~@/utils.less';
+
+.filterBar {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.fliterBlock {
+  margin: 20px 24px;
+  padding-bottom: 20px;
+
+  :global {
+    .ant-input {
+      border-top-color: transparent !important;
+      border-right-color: transparent !important;
+      border-left-color: transparent !important;
+      border-bottom: 1px solid #d9d9d9;
+      background: transparent;
+    }
+
+    .ant-input:focus {
+      border-bottom: 1px solid #d9d9d9;
+      box-shadow: 0 0 0 0 transparent;
+    }
+    .ant-select-selection,.ant-select-selection--single{
+      width: 180px;
+    }
+  }
+}
+
+.modeBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filterHeader {
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  // margin-top: 10px;
+}
+
+.filterItem {
+  padding-top: 4px;
+  border-bottom: 1px solid @border-color-gray;
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+// .itemConent {
+// max-height: 200px;
+// overflow: hidden;
+
+// &:hover {
+//   overflow-y: auto;
+// }
+// }
+
+.fitlerSubItem {
+  //   width: 220px;
+  line-height: 32px;
+  padding-left: 12px;
+  word-break: break-word;
+}
+
+// .normalCheck {}
+
+// .redCheck {}
+
+.partSearchStyle {
+  transition: all, 0.3s;
+  overflow: hidden;
+}
+
+.asc {
+  //   .mixin-icon-image('../../assets/images/icon_asc.svg', 20px, 20px);
+  .mixin-icon-image('./assets/images/icon_asc.svg', 20px, 20px);
+  cursor: pointer;
+
+  &:hover {
+    color: @bg-color-blue;
+  }
+}
+
+.desc {
+  //   .mixin-icon-image('../../assets/images/icon_desc.svg', 20px, 20px);
+  .mixin-icon-image('./assets/images/icon_desc.svg', 20px, 20px);
+  cursor: pointer;
+
+  &:hover {
+    color: @bg-color-blue;
+  }
+}
+
+.manageBtn {
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  border-top: 1px solid @border-color-gray;
+  border-bottom: 1px solid @border-color-gray;
+  background: #f2f2f2;
+  z-index: 50;
+}
+
+.btnStyle {
+  background: #f2f2f2;
+  border: none;
+  border-radius: 0;
+  outline: none !important;
+  position: relative;
+  display: inline-block;
+  height: 38px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+
+  &:nth-child(2) {
+    border-left: 1px solid @border-color-gray;
+    border-right: 1px solid @border-color-gray;
+  }
+
+  // &:last-child {
+  //   border-right: 0;
+  // }
+
+  // &:hover {
+  //   color: @bg-color-blue;
+  // }
+}
+
+.btnNotAllowed {
+  line-height: 40px;
+  flex: 1;
+  text-align: center;
+  cursor: not-allowed;
+  color: #d9d9d9;
+  background: #f5f5f5;
+}
+
+.errMsg {
+  color: red;
+  line-height: 30px;
+}
+
+:global(.ant-dropdown-menu-item) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quickBlock {
+  overflow-y: auto;
+  max-height: 180px;
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tagItem {
+  float: left;
+  height: 23px;
+  line-height: 22px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  border: 1px solid #bfbfbf;
+  padding: 0 3px;
+  margin-top: 6px;
+  margin-right: 10px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.tag {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 96%;
+  vertical-align: middle;
+}
+
+.titleCon {
+  width: 70%;
+}
+
+.title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 40%;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.btnGroup {
+  border-right: 1px solid @border-color-gray;
+  display: inline-block;
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+  // padding: 0 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  width: 49px;
+  height: 27px;
+  line-height: 27px;
+}
+
+.blueBtn {
+  background-color: rgb(38, 98, 238);
+  color: rgb(224, 224, 224);
+  margin-left: 4.5px;
+}
+
+.grayBtn {
+  background-color: rgb(224, 224, 224);
+  color: #595959;
+}
+
+.redBtn {
+  background-color: rgb(222, 73, 73);
+  color: rgb(224, 224, 224);
+}
+
+.btnSpan {
+  font-size: 11px;
+  padding: 4px 4px;
+  border-radius: 4px;
+}
+
+.searchBtn {
+  // width: 254px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  position: fixed;
+  bottom: 40px;
+  left: 10px;
+  cursor: pointer;
+}

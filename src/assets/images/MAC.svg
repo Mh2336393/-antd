@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/MAC</title>
+    <g id="icon/MAC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3" transform="translate(5.000000, 6.000000)">
+            <line x1="24" y1="25" x2="24" y2="11" id="直线-2" stroke="#81A6F0" stroke-width="2"></line>
+            <circle id="椭圆形" fill="#2E65D1" cx="24" cy="13" r="2"></circle>
+            <rect id="矩形" fill="#81A6F0" x="5" y="29" width="3" height="2"></rect>
+            <rect id="矩形备份-11" fill="#81A6F0" x="10" y="29" width="3" height="2"></rect>
+            <path d="M32,13 C32,8.581722 28.418278,5 24,5 C19.581722,5 16,8.581722 16,13" id="路径" stroke="#81A6F0" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M37,13 C37,5.82029825 31.1797017,0 24,0 C16.8202983,0 11,5.82029825 11,13" id="路径" stroke="#81A6F0" stroke-width="2" stroke-linecap="round"></path>
+            <rect id="矩形" stroke="#2A62D1" stroke-width="2" x="1" y="24" width="36" height="12"></rect>
+        </g>
+    </g>
+</svg>

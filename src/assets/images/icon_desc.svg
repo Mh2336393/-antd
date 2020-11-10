@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>降序</title>
+    <desc>Created with Sketch.</desc>
+    <g id="降序" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-11" fill="#9EA2AE">
+            <rect id="矩形" x="4" y="5" width="7" height="1"></rect>
+            <rect id="矩形-copy-9" x="4" y="10" width="7" height="1"></rect>
+            <rect id="矩形-copy-10" x="4" y="15" width="7" height="1"></rect>
+            <polygon id="路径-4" transform="translate(15.939814, 10.087302) scale(1, -1) translate(-15.939814, -10.087302) " points="15 5.8516287 15 16 14 16 14 4.5 14.8796283 4.17460431 17.8796283 7.67460431 17.1203717 8.32539569"></polygon>
+        </g>
+    </g>
+</svg>

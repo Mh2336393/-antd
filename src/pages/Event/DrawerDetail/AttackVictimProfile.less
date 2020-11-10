@@ -1,0 +1,72 @@
+// .infoBlock {
+// padding: 20px 0;
+.title {
+  font-size: 14px;
+  color: #000;
+}
+
+.infoContent {
+  display: flex;
+}
+
+.attackBlock {
+  &:not(:last-child) {
+    border-bottom: solid 1px #ccc;
+  }
+
+  padding-bottom: 20px;
+
+  :global {
+    .ant-col-8 {
+      color: #a3a3a3;
+    }
+
+    .ant-col-16 {
+      color: #000;
+    }
+  }
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.operation {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.count {
+  padding-right: 4px;
+}
+
+// }
+
+.attackTips {
+  z-index: 100;
+  width: 18px;
+  position: relative;
+  left: 68%;
+  top: 70px;
+}
+
+.popcontent {
+  width: 340px;
+}
+
+.aBtn {
+  color: #000;
+  background-color: #dededd;
+  border-color: #dededd;
+}
+
+.aBtn:hover,
+.aBtn:focus,
+.aBtn:active,
+.aBtn.active {
+  color: #000;
+  background-color: #c1c1c1;
+  border-color: #c1c1c1;
+}

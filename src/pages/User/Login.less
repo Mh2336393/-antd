@@ -1,0 +1,107 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+  background: url(../../assets/smbBack@3x.png) no-repeat;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+
+    .register {
+      float: right;
+    }
+  }
+
+  .qcerDiv {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .tipDiv {
+    width: 274px;
+    height: 32px;
+    background: #e7efff;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #000;
+
+    > i {
+      color: #2662ee;
+      margin-right: 10px;
+      font-size: 15px;
+    }
+  }
+
+  .uploadChild {
+    width: 274px;
+    height: 32px;
+    text-align: center;
+  }
+
+  .upLoadBlueBtn {
+    width: 274px;
+    height: 32px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0;
+    background-color: #2662ee;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+
+  .uploadCon {
+    display: flex;
+    justify-content: center;
+    .tips {
+      padding: 10px 20px;
+      background-color: #e7efff;
+      color: #000;
+      width: 274px;
+    }
+    .tipsError {
+      padding: 10px 20px;
+      background-color: #FFF1C7;
+      color: #000;
+      width: 274px;
+    }
+    .fontOri{
+      color:#ff8d1a;
+    }
+    .tipsText {
+      margin-left: 10px;
+    }
+  }
+
+  .msg {
+    position: absolute;
+    top: 10px;
+    width: 274px;
+    left: 50%;
+    margin-left: -137px;
+  }
+
+  .upload {
+    margin-top: 20px;
+  }
+}

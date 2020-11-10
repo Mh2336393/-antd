@@ -1,0 +1,30 @@
+.wrapper {
+  margin-top: 12px;
+  border: 1px solid #dcdee0;
+  border-radius: 2px;
+
+  .content {
+    box-sizing: border-box;
+    padding: 20px 20px 5px 20px;
+
+    &:first-child {
+      border-bottom: 1px solid #dcdee0;
+    }
+
+    :global {
+      .ant-descriptions {
+        .ant-descriptions-item-label ant-descriptions-item-colon {
+          font-family: 'PingFangSC-Regular';
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+
+        .ant-descriptions-item-content {
+          font-family: 'PingFangSC-Regular';
+          font-size: 14px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}

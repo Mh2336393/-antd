@@ -1,0 +1,183 @@
+// @import '~@/common/styles/default';
+// @import '~@/common/styles/mixin';
+@import '~@/utils.less';
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  // height: ~'calc(100vh - 48px)';
+  height: 100%;
+  :global {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      word-break: break-all !important;
+    }
+
+    .ant-btn:focus {
+      color: #54576a;
+      background: transparent;
+      border-color: #d9d9d9;
+    }
+
+    .ant-layout-sider {
+      background: #f2f2f2;
+    }
+
+    .ant-layout {
+      background: #f2f2f2;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  color: @font-color-base1;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+.titleStyle {
+  margin: 0;
+  // margin-right: 40px;
+  color: @font-color-base1;
+  font-size: 20px;
+}
+
+.closeStyle {
+  margin-left: 8px;
+  color: '#000';
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.contentBlock {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.switch {
+  .mixin-icon-image('./assets/images/fold_close.svg', 10px, 40px);
+  // .mixin-icon-image('../', 10px, 40px);
+  margin-right: 0;
+}
+
+.switchBlue {
+  .mixin-icon-image('./assets/images/fold_open.svg', 10px, 40px);
+  margin-right: 0;
+}
+
+.handlebtn {
+  width: 12px;
+
+  span {
+    display: inline-block;
+    margin-top: 300px;
+    cursor: pointer;
+  }
+}
+
+.chartBlock {
+  margin-top: 12px;
+  // width: 100%;
+  padding: 0 24px;
+  background: #fff;
+}
+
+.rightBlock {
+  flex: auto;
+  margin-left: 306px;
+  padding: 12px;
+}
+
+.tableBlock {
+  margin-top: 12px;
+  padding: 0 24px 12px 24px;
+  background: #fff;
+}
+
+.btnActive {
+  background: #fff !important;
+}
+
+.btnDefault {
+  background: #f2f2f2;
+  width: 33%;
+}
+
+.sidebarClose {
+  margin-left: -305px;
+  border: 0;
+}
+
+.spinStyle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settingBlock {
+  cursor: pointer;
+  padding: 3px 6px;
+
+  &:hover {
+    border-radius: 3px;
+    background: #eee;
+  }
+
+  // .settingBtn {
+  //   .mixin-icon-image('../../assets/images/manage.svg', 18px, 18px);
+  // }
+}
+
+.chartBlock {
+  background: #fff;
+}
+
+.selectItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  padding: 7px 12px;
+  margin: 4px;
+  box-sizing: border-box;
+  font-family: MicrosoftYaHei;
+  font-size: 13px;
+  color: #3d404e;
+  line-height: 13px;
+  // background: #bae7ff;
+  // border-radius: 5px;
+}
+
+.filteredList {
+  display: flex;
+  align-items: center;
+}
+
+.selectedList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contentwrap {
+  :global(.ant-table-tbody .ant-table-row > td) {
+    word-break: break-all;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+}

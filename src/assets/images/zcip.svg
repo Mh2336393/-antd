@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/资产IP</title>
+    <g id="icon/资产IP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05-other/系统/system_48" transform="translate(5.000000, 7.000000)">
+            <g id="服务器">
+                <path d="M14,30 L14,31.9999688 L0,32 L0,30.0000312 L14,30 Z M38,30 L38,31.9999688 L24,32 L24,30.0000312 L38,30 Z M20,25 L20,29 L18,29 L18,25 L20,25 Z" id="形状结合" fill="#81A6F0"></path>
+                <path d="M22,28 L22,34 L16,34 L16,28 L22,28 Z M37.9765625,-4.05816536e-09 L37.9765625,25.890625 L0,25.890625 L0,-4.05816536e-09 L37.9765625,-4.05816536e-09 Z M36,2 L2,2 L2,24 L36,24 L36,2 Z" id="形状结合" fill="#2A62D1"></path>
+                <path d="M11,19 L11,17 L13,17 L13,10 L11,10 L11,8 L17,8 L17,10 L15,10 L15,17 L17,17 L17,19 L11,19 Z" id="形状结合" fill="#4072D5"></path>
+                <rect id="矩形备份-4" fill="#4072D5" x="19" y="9" width="2" height="10"></rect>
+            </g>
+        </g>
+        <path d="M24,16 L29.5,16 C30.8807119,16 32,17.1192881 32,18.5 C32,19.8807119 30.8807119,21 29.5,21 L25,21 L25,21" id="路径-2" stroke="#2A62D1" stroke-width="2"></path>
+    </g>
+</svg>

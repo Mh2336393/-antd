@@ -1,0 +1,692 @@
+@import '~@/utils.less';
+
+.titleBlock {
+  width        : 100%;
+  height       : 48px;
+  padding-left : 30px;
+  border-bottom: 1px solid #dbdbdb;
+  display      : flex;
+  align-items  : center;
+  font-size    : 16px;
+
+  .titleBack {
+    cursor: pointer;
+    color : #1890ff;
+  }
+
+  .titleLine {
+    border-left: 1px solid #aaa;
+    display    : block;
+    height     : 16px;
+    margin     : 0 20px;
+  }
+}
+
+.alertWrap {
+  margin        : 5px 0 10px 0;
+  width         : 100%;
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+  box-sizing    : border-box;
+  padding       : 0 10px;
+  line-height   : 30px;
+  background    : rgba(24, 144, 255, 0.07);
+  border        : 1px solid #729bf1;
+}
+
+.lenDiv {
+  margin: 0 10px;
+}
+
+.gapLine {
+  margin: 0 10px;
+  color : #e8e8e8;
+}
+
+.colLabel {
+  height         : 39px;
+  line-height    : 39px;
+  padding-right  : 8px;
+  //   text-align: right;
+}
+
+.fontLabel {
+  height      : 39px;
+  line-height : 39px;
+  padding-left: 8px;
+  text-align  : left;
+}
+
+.mustStar {
+  font-family  : SimSun, serif;
+  font-size    : 14px;
+  color        : #f5222d;
+  font-weight  : normal;
+  padding-right: 4px;
+}
+
+// .formBlock {
+//     background: #F3F4F7;
+// }
+
+.subTitleBlock {
+  display      : flex;
+  height       : 30px;
+  font-size    : 14px;
+  font-weight  : 500;
+  align-items  : center;
+  border-bottom: 1px solid #d9deeb;
+  margin-bottom: 20px;
+}
+
+.action {
+  a {
+    margin: 0 10px;
+  }
+}
+
+.checkboxsDiv {
+  :global(.ant-checkbox-wrapper) {
+    width : 75px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.drawerContent {
+  background: #fff;
+  margin    : 0 auto;
+  padding   : 12px 5px 30px 20px;
+  font-size : 14px;
+  color     : #54576a;
+
+  .title4 {
+    font-size  : 14px;
+    font-weight: bolder;
+    margin     : 0;
+    height     : 39px;
+    line-height: 39px;
+  }
+
+  .rowBlock {
+    font-size    : 14px;
+    border-bottom: 1px solid #eee;
+    margin       : 20px 0;
+
+    :global {
+      .ant-table-thead>tr>th,
+      .ant-table-tbody>tr>td {
+        padding: 10px 16px;
+      }
+    }
+  }
+}
+
+.content {
+  width     : 1000px;
+  background: #fff;
+  margin    : 12px auto 0;
+  padding   : 14px 30px 30px;
+  font-size : 14px;
+  color     : #54576a;
+
+  .title4 {
+    font-size  : 14px;
+    font-weight: bolder;
+    margin     : 0;
+    height     : 39px;
+    line-height: 39px;
+  }
+
+  .rowBlock {
+    font-size    : 14px;
+    border-bottom: 1px solid #eee;
+    margin       : 20px 0;
+  }
+}
+
+.spanInputBox {
+  // font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // font-variant: tabular-nums;
+  box-sizing      : border-box;
+  margin          : 0;
+  list-style      : none;
+  position        : relative;
+  display         : inline-block;
+  padding         : 4px 11px;
+  width           : 100%;
+  // height: 32px;
+  font-size       : 14px;
+  // line-height: 1.5;
+  color           : #54576a;
+  background-color: #fff;
+  background-image: none;
+  border          : 1px solid #d9d9d9;
+  border-radius   : 4px;
+  height          : auto;
+  line-height     : 22px;
+  word-break      : break-all;
+}
+
+.spanInput {
+  // font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // font-variant: tabular-nums;
+  box-sizing           : border-box;
+  margin               : 0;
+  list-style           : none;
+  position             : relative;
+  display              : inline-block;
+  padding              : 4px 11px;
+  width                : 100%;
+  // height: 32px;
+  font-size            : 14px;
+  // line-height: 1.5;
+  //   color: #54576a;
+  //   background-color: #fff;
+  background-image     : none;
+  border               : 1px solid #d9d9d9;
+  background-color     : #f5f5f5;
+  // border-radius: 4px;
+  height               : auto;
+  line-height          : 22px;
+  word-break           : break-all;
+  color                : rgba(0, 0, 0, 0.25);
+}
+
+.newRule {
+  color: #54576a;
+}
+
+.inLine {
+  height: 30px;
+  width : 100%;
+}
+
+.info-block {
+  margin-top   : 20px;
+  margin-bottom: 40px;
+}
+
+.return {
+  height     : 30px;
+  line-height: 30px; // margin-left: 30px;
+  font-size  : 16px;
+}
+
+.filterBlock {
+  border       : 0;
+  border-radius: 8px;
+  width        : 900px;
+}
+
+.filterBlockWithFlex {
+  // width: 800px;
+  display    : flex;
+  align-items: center;
+}
+
+.threshold {
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : center;
+
+  :global(.ant-form-item) {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  height       : 55px;
+  line-height  : 55px;
+  margin       : 0;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #ccc;
+  font-size    : 16px;
+  font-weight  : bold;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.title-2 {
+  font-size  : 14px;
+  font-weight: bold;
+}
+
+.previewDiv {
+  // display: block;
+  background-color: #fff;
+  border-radius   : 4px;
+  border          : 1px solid #d9d9d9;
+  margin          : 20px 0 24px;
+  padding         : 10px;
+}
+
+.rule-row {
+  margin-bottom: 10px;
+}
+
+.name {
+  display     : inline-block;
+  margin-right: 20px;
+  width       : 85px;
+  text-align  : right;
+}
+
+.triggle-input {
+  display: inline-block;
+  margin : 0 5px;
+  width  : 100px;
+}
+
+.filterItem {
+  margin-top     : 10px;
+  display        : flex;
+  height         : 65px;
+  justify-content: space-between;
+  align-items    : center;
+  border-radius  : 6px;
+  padding        : 3px 10px;
+}
+
+.filterContent {
+  // width: 100%;
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : flex-start;
+
+  :global(.ant-form-item) {
+    margin-bottom: 0;
+  }
+}
+
+.addFilter {
+  margin: 0 10px;
+  cursor: pointer;
+  color : @font-color-blue;
+}
+
+.deleteFilter {
+  margin-left: 10px;
+  cursor     : pointer;
+  color      : @font-color-red;
+}
+
+.filterSpan {
+  display    : block;
+  line-height: 39px;
+  text-align : right;
+}
+
+.delete-btn {
+  width        : 20px;
+  height       : 20px;
+  line-height  : 20px;
+  text-align   : center;
+  border-radius: 10px;
+  background   : #ccc;
+  color        : #fff;
+  font-size    : 14px;
+  cursor       : pointer;
+}
+
+.filter-select {
+  margin-right: 5px;
+}
+
+.add-filter {
+  display    : inline-block;
+  height     : 40px;
+  line-height: 40px;
+  margin-top : 20px;
+  text-align : left;
+}
+
+.filter-footer {
+  width          : 100%;
+  display        : flex;
+  margin-bottom  : 50px;
+  justify-content: center;
+
+  a {
+    height       : 30px;
+    width        : 100px;
+    border-radius: 5px;
+    text-align   : center;
+    line-height  : 30px;
+    display      : inline-block;
+    background   : #4d92df;
+    color        : #fff;
+    margin-right : 15px;
+  }
+
+  .reset {
+    background: #ccc;
+  }
+}
+
+.previewResult {
+  width           : 100%;
+  height          : 40px;
+  padding         : 0 10px;
+  margin-top      : 10px;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  background-color: #e4f0fe;
+  color           : #4d92df;
+}
+
+.warnForm {
+  :global(.ant-form-item-label) {
+    text-align: left;
+  }
+}
+
+.colPcapSize>div {
+  float: left;
+}
+
+.colPcapSize>.textDiv {
+  height     : 39px;
+  line-height: 39px;
+}
+
+.colPcapSize:after {
+  content   : '.';
+  display   : block;
+  height    : 0;
+  visibility: hidden;
+  clear     : both;
+}
+
+.filterDiv {
+  border          : 1px solid #d9d9d9;
+  border-radius   : 3px;
+  width           : 700px;
+  // margin-bottom: 30px;
+
+  .filterTheme {
+    height     : 39px;
+    line-height: 39px;
+    position   : relative;
+    padding    : 0 20px;
+  }
+
+  .filterModal {
+    position: absolute;
+    right   : 20px;
+    top     : 0;
+
+    .modalItem {
+      margin-left: 20px;
+      width      : 64px;
+      overflow   : hidden;
+      height     : 39px;
+    }
+  }
+
+  .filterSpan {
+    text-align: left;
+  }
+
+  .filterMid {
+    padding: 0 20px 20px 20px;
+
+    .filterDataSource {
+      :global(.ant-form-item) {
+        margin-bottom: 8px;
+      }
+    }
+
+    :global(.ant-form-item) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .preview {
+    border-top   : 1px solid #d9d9d9;
+    // margin-top: 20px;
+    padding      : 20px;
+  }
+
+  .superModal {
+    padding: 20px;
+
+    :global(.ant-form-item) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.filterGroupsDiv {
+  :global(.ant-col-xs-4.ant-col-sm-4) {
+    width: 150px;
+  }
+
+  :global(.ant-col-xs-2.ant-col-sm-2) {
+    width: 30px;
+  }
+}
+
+.eventAlarmDiv {
+  border       : 1px solid #d9d9d9;
+  border-radius: 5px;
+  width        : 950px;
+  margin-bottom: 30px;
+
+  .mapTheme {
+    height     : 39px;
+    line-height: 39px;
+    position   : relative;
+    padding    : 0 20px;
+  }
+
+  :global(.ant-form-item) {
+    margin-bottom: 12px;
+  }
+
+  .mapMid {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+.eventCountDiv,
+.eventLinkDiv {
+  :global(.ant-form-item) {
+    margin-bottom: 12px;
+  }
+}
+
+.loadingStyle {
+  text-align   : center;
+  border-radius: 4px;
+  padding      : 60px 50px;
+}
+
+.tagBlock {
+  display       : flex;
+  // align-items: center;
+}
+
+.tagItem {
+  // height: 23px;
+  line-height  : 22px;
+  border-radius: 4px;
+  background   : #f5f5f5;
+  border       : 1px solid #bfbfbf;
+  padding      : 0 3px;
+  margin-top   : 6px;
+  margin-right : 10px;
+  max-width    : 100%;
+}
+
+.tag {
+  display         : inline-block;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  // max-width:96%;
+  vertical-align  : middle;
+}
+
+.optionList {
+  position        : absolute;
+  z-index         : 20;
+  border          : 1px solid #d9d9d9;
+  background-color: #fff;
+}
+
+.modeDiv {
+  padding-bottom: 20px;
+  display       : flex;
+  align-items   : center;
+
+  >a {
+    margin-right: 20px;
+  }
+}
+
+.FormWrap {
+  :global(.ant-form-item) {
+    margin-bottom: 2px;
+  }
+
+  :global(.ant-form-item-control) {
+    // background-color: lightcoral;
+    line-height: 39px;
+  }
+
+  .iconBtnsDiv {
+    line-height: 39px;
+    font-size  : 24px;
+
+    .plusIcon {
+      color      : #2662ee;
+      cursor     : pointer;
+      margin-left: 4px;
+    }
+
+    .minusIcon {
+      margin-left: 4px;
+      color      : #f00;
+      cursor     : pointer;
+    }
+  }
+
+  .InnerItemShow {
+    :global(.ant-select-selection__rendered) {
+      :global(.ant-select-selection-selected-value) {
+        width: 100%;
+      }
+
+      .selfOption {
+        .innerFormItem {
+          display: block;
+          width  : 100%;
+        }
+
+        .selfText {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.selfOption {
+  .innerFormItem {
+    display   : none;
+    margin-top: -1px;
+
+    :global {
+      .ant-form-item-control {
+        line-height: 0;
+      }
+
+      .ant-form-item {
+        margin: 0;
+      }
+    }
+  }
+
+  .selfText {
+    line-height: 32px;
+    display    : block;
+  }
+}
+
+.FormWrap .selfOption .innerFormItem {
+  :global {
+    .ant-input {
+      border       : none;
+      height       : 30px;
+      border-radius: 0;
+      padding      : 0;
+      outline      : none;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        box-shadow: none;
+        border    : none;
+      }
+    }
+
+    // .ant-input-disabled {
+    //   background-color: #fff;
+    // }
+  }
+}
+
+.popverAStyle {
+  display    : block;
+  line-height: 30px;
+}
+
+.morePopoverItem {
+  :global {
+    .ant-select-dropdown-menu-item-disabled {
+      color: #54576a;
+    }
+
+    .ant-popover-inner {
+      box-shadow: none;
+    }
+
+    .ant-select-dropdown.ant-select-dropdown--single>div,
+    .ant-select-dropdown-menu,
+    .ant-select-dropdown-menu-item {
+      overflow: visible !important;
+    }
+  }
+}
+
+.popoverOptionDiv {
+  width          : 135px;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  padding-right  : 8px;
+}
+
+.ipTipSpan {
+  display: inline-block;
+  width  : 136px;
+}
+
+.portTipSpan {
+  display: inline-block;
+  width  : 100px;
+}
+
+.ruleCbxDiv .ruleCbxWrapper {
+  width        : 300px;
+  display      : block;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+  margin       : 0;
+}

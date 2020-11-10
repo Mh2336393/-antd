@@ -1,0 +1,15 @@
+._map-background-container {
+  background-image: url('./img/background.png');
+  background-color: rgb(27, 27, 57);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backface-visibility: hidden;
+  transition: background-position 0.8s ease-in-out;
+}
+
+._map-container {
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+}

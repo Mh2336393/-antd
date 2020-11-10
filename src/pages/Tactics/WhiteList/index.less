@@ -1,0 +1,298 @@
+.TableTdPaddingWrap table tr th,
+.TableTdPaddingWrap table tr td {
+  padding: 12px 8px;
+}
+
+.formContentwrap {
+  position: relative;
+  top: -65px;
+  z-index: 50;
+  background: #f2f2f2;
+  min-height: 600px;
+}
+
+.pageTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 0 24px;
+}
+
+.colLabel {
+  height: 39px;
+  line-height: 39px;
+  padding-right: 8px;
+  text-align: right;
+}
+
+.selfTags {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid #d4cfcf;
+  border-radius: 5px;
+}
+
+.fontLabel {
+  height: 39px;
+  line-height: 39px;
+  padding-left: 8px;
+  text-align: left;
+}
+
+.mustStar {
+  font-family: SimSun, serif;
+  font-size: 14px;
+  color: #f5222d;
+  font-weight: normal;
+  padding-right: 4px;
+}
+
+.handleAction {
+  .tableAction {
+    display: block;
+  }
+
+  .formIcon {
+    display: inline-block;
+  }
+
+  .threatAction {
+    .showIcon {
+      visibility: visible;
+    }
+
+    .userInput,
+    .actionContent {
+      display: block;
+    }
+
+    .userText.noUserText {
+      display: none;
+    }
+  }
+}
+
+.tableAction {
+  display: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+
+  .actionContent {
+    position: absolute;
+    z-index: 10;
+    left: 6px; // top:20px;
+    background: #fff;
+    border: 1px solid #cfd6e5;
+    width: 60px;
+    padding: 5px 10px;
+
+    a {
+      text-align: left;
+      margin: 0;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.65);
+      //   a {
+      //     color: rgba(0, 0, 0, 0.65);
+      //   }
+
+      &:hover {
+        color: #2662ee;
+      }
+    }
+  }
+}
+
+.iplistFilter {
+  border-bottom: 1px solid #d9deeb;
+  background: #fff;
+  padding: 10px 25px;
+
+  :global(.ant-col-20) {
+    width: 310px;
+  }
+
+  :global(.ant-col-6) {
+    width: 310px;
+  }
+
+  :global(.ant-col-8) {
+    width: 50px;
+  }
+
+  :global(.ant-col-16) {
+    width: 250px;
+  }
+}
+
+.ipForm {
+  :global(.ant-form-item) {
+    margin-bottom: 8px;
+  }
+}
+
+.formIcon {
+  display: none;
+  width: 20px; // height: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+// .ruleConfigContent {
+//   background-color: #f0f2f5;
+// }
+.ruleConfigHeader {
+  font-size: 14px;
+  border-bottom: 1px solid #d9deeb;
+  background: #fff;
+  padding: 20px 20px;
+
+  :global(.ant-divider-vertical) {
+    margin: 0 15px;
+    background-color: #000;
+  }
+
+  span:first-child {
+    cursor: pointer;
+  }
+
+  div:last-child {
+    float: right;
+
+    input {
+      width: 240px;
+      margin-right: 18px;
+    }
+  }
+}
+
+.rulConfigTable {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addRuleFooter {
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.ruleSelectPrompt {
+  display: inline-block;
+  padding-left: 6px;
+
+  span {
+    color: #e74343;
+  }
+}
+
+.modalFooter {
+  a {
+    float: left;
+    color: #2662ee;
+  }
+}
+
+.rulelistFilter {
+  margin-top: 8px;
+
+  :global(.ant-col-20) {
+    padding-right: 0 !important;
+  }
+
+  :global(.ant-col-6) {
+    padding-left: 0 !important;
+  }
+
+  :global(.ant-col-8) {
+    padding-left: 0 !important;
+  }
+}
+
+.filterwrap {
+  border-bottom: 1px solid #d9deeb;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.contentwrap {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.userText,
+.showAction {
+  overflow: hidden;
+
+  .showText,
+  .showIcon {
+    float: left;
+  }
+}
+
+.threatAction {
+  position: relative;
+
+  .showIcon {
+    visibility: hidden;
+    cursor: pointer;
+    margin: 0 0 0 8px;
+  }
+
+  .userInput {
+    display: none;
+    width: 220px;
+    position: relative;
+
+    .checkBtn {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -10px;
+    }
+  }
+
+  .labels label {
+    display: block;
+    margin: 10px 0;
+    width: 150px;
+  }
+
+  .actionContent {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 6px;
+    background: #fff;
+    border: 1px solid #cfd6e5;
+    padding: 5px 10px;
+
+    p {
+      text-align: left;
+      margin: 0;
+      cursor: pointer;
+
+      a {
+        color: rgba(0, 0, 0, 0.65);
+      }
+
+      &:hover {
+        color: #2662ee;
+      }
+    }
+  }
+}
+
+.idsDiv {
+  border: 1px solid #d9d9d9;
+  padding: 4px 11px;
+  margin-bottom: 4px;
+  min-height: 52px;
+  max-height: 178px;
+  overflow: auto;
+}

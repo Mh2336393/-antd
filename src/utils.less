@@ -1,0 +1,142 @@
+@btn-color-blue: #06f;
+@report-title-blue: #2662dd;
+@title-color: rgba(0, 0, 0, 0.85);
+
+@gj-prefix: gj;
+@font-size-samll: 12px;
+@font-size-small: 12px;
+@font-size-base: 14px;
+@font-size-big: 16px;
+@font-size-large: 20px;
+@font-color-base: #3d404e;
+@font-color-gray1: #6b6f93;
+@font-color-gray2: #5a6076;
+@font-color-lightGray: #7d7d7d;
+@font-color-darkGray: #636577;
+@font-color-red: #e85050;
+@font-color-green: #52c41a;
+@font-color-blue: #3369d9;
+@font-color-yellow: #fadb14;
+
+@bg-color-blue: #1890ff;
+@bg-color-gray: rgba(0, 0, 0, 0.25);
+@bg-color-gray1: #efefef;
+@bg-color-lightGray: #a6a6a6;
+@bg-color-lightGray1: #fbfbfb;
+@bg-color-lightGray2: #f3f4f7;
+@header_border-color-gray: #dbdbdb;
+@bg-color-common: #f2f2f2;
+@bg-white: #fff;
+@border-color-gray: #dbdbdb;
+
+@color-commonBlue: #2662ee;
+@font-color-base1: #3d404e;
+@font-header: #54576a;
+@font-color-lightBase: #8f909e;
+@border-color-lightGray: #eaedf3;
+@border-color-common: #d9d9d9;
+
+.mixin-icon-image(@url, @width: 19px, @height: 19px) {
+  display: inline-block;
+  width: @width;
+  height: @height;
+  margin-right: 4px;
+  vertical-align: middle;
+  background: url(@url) 0 0 no-repeat;
+}
+
+.ellipsis(@width) {
+  width: @width;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.imgBlock(@width, @height) {
+  width: @width;
+  height: @height;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commonBlueButton(@width: 100px, @height: 28px) {
+  display: inline-block;
+  min-width: @width;
+  height: @height;
+  line-height: @height - 2px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #2662ee;
+  color: #e1e9fb;
+  cursor: pointer;
+  // border: none;
+}
+
+.commonWhiteButton(@width: 100px, @height: 28px) {
+  display: inline-block;
+  min-width: @width;
+  height: @height;
+  line-height: @height - 2px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  color: #3d404e;
+  cursor: pointer;
+}
+
+.blueBtnHover {
+  background-color: #5089fa;
+  color: #e1e9fb;
+}
+
+.whiteBtnHover {
+  background-color: #f8f8fb;
+  border: 1px solid #d9d9d9;
+  color: #3d404e;
+}
+
+.btnDisable {
+  color: rgba(0, 0, 0, 0.25);
+  border: 1px solid #d9d9d9;
+  background-color: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.headerCustom(@height: 64px, @size: 20px, @weight: 500) {
+  position: relative;
+  width: 100%;
+  height: @height;
+  line-height: @height;
+  padding-left: 104px;
+  font-size: @size;
+  color: @font-color-base1;
+  border-bottom: 1px solid @border-color-lightGray;
+  background-color: #fff;
+  font-weight: @weight;
+}
+
+.titleCustom(@height: 64px, @size: 20px) {
+  width: 100%;
+  height: @height;
+  line-height: @height;
+  padding-left: 24px;
+  font-size: @size;
+  color: @font-color-base1;
+  border-bottom: 1px solid @border-color-lightGray;
+  background-color: #fff;
+}
+
+.dotIcon(@bgColor) {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+  background: @bgColor;
+}

@@ -1,0 +1,377 @@
+@font-color-black: #54576a;
+
+.threat-detail {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px 30px 30px;
+}
+
+.reactJsonTab {
+  :global {
+    .react-json-view {
+      word-break: break-all;
+      // font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, sans-serif !important;
+      font-family: 'Chinese Quote', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+        'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+    }
+  }
+}
+
+// .iconHelp {
+//   .mixin-icon-image('../../assets/images/icon_help.png', 16px, 16px); // vertical-align: bottom;
+// }
+.return {
+  margin: 20px 0; // margin-left: 30px;
+  font-size: 16px;
+  color: @font-color-black;
+}
+
+.threat-detail-container {
+  border: solid 1px #ccc;
+  background: #fff;
+  padding-bottom: 50px;
+}
+
+.title {
+  height: 55px;
+  line-height: 55px;
+  margin: 0 30px;
+  border-bottom: solid 1px #ccc;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tagList {
+  // height: 50px;
+  // line-height: 50px;
+  padding: 10px 100px 10px 0;
+  line-height: 3;
+}
+
+.tagItem {
+  background: #bae7ff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 45px;
+  font-size: 16px;
+  color: @font-color-black;
+}
+
+.fileTab .info-block {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.fileTab .showMore {
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  line-height: 30px;
+}
+
+.name {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  color: #a3a3a3;
+}
+
+.text {
+  // display: inline-block;
+  // text-align: left;
+  width: 376px;
+  // margin: 0 4px;
+  // color: #000;
+}
+
+.desc {
+  text-indent: 4px;
+}
+
+.log {
+  border: solid 1px #ccc;
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+}
+
+.score {
+  position: absolute;
+  width: 100px;
+  top: 220px;
+  right: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  text-align: center;
+}
+
+.showMore {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  color: #000;
+  background-color: #dededd;
+  border-color: #dededd;
+}
+
+.showMore:hover,
+.showMore:focus,
+.showMore:active,
+.showMore.active {
+  color: #000;
+  background-color: #c1c1c1;
+  border-color: #c1c1c1;
+}
+
+.descItem {
+  display: flex;
+}
+
+.tagPopcontent {
+  width: 300px;
+}
+
+.tabPane {
+  height: 600px;
+  overflow: auto;
+}
+
+.popoverCxt {
+  width: 220px;
+  font-size: 12px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.iocTag {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 6px;
+  border: 1px solid #f5222d;
+  border-radius: 5px;
+  color: #f5222d;
+  margin-right: 5px;
+}
+
+.iocTagLink {
+  display: inline-block;
+  padding: 0 6px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #f5222d;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f5222d;
+  margin-right: 5px;
+}
+
+.popoverLimitHei {
+  :global(.ant-popover-inner-content) {
+    max-height: 180px;
+    overflow: auto;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  :global(.ant-popover-arrow) {
+    background-color: #fff;
+  }
+}
+
+.pcapWrap {
+  width: 100%;
+  padding: 4px;
+
+  .pcapDiv {
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+
+    .pcapTitle {
+      padding: 0 24px;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 1px solid #e4e4e4;
+      overflow: hidden;
+      font-size: 12px;
+      font-weight: bold;
+
+      span {
+        // font-weight: 900;
+        float: left;
+      }
+
+      a {
+        float: right;
+      }
+    }
+
+    .pcapCxt {
+      padding: 10px 24px;
+    }
+  }
+}
+
+.titleDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid #dcdee3;
+
+  .themeSpan {
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.ctxDiv {
+  padding: 10px 20px;
+}
+
+.actionAllWrap,
+.info-block,
+.chainWrap,
+.ctxDiv {
+  :global {
+    .ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+    .ant-table-thead > tr > th {
+      padding: 8px;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 12px 8px;
+    }
+  }
+
+  .warnTable {
+    .pcapWrap {
+      padding: 0;
+    }
+
+    :global {
+      .ant-tabs-bar {
+        margin: 0;
+      }
+
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td {
+        text-align: center;
+      }
+
+      .ant-table-tbody > tr > td {
+        font-size: 13px;
+      }
+
+      .ant-table-expand-icon-th,
+      .ant-table-row-expand-icon-cell {
+        padding: 12px 0 !important;
+        min-width: 24px;
+        width: 24px;
+        // background-color: red;
+      }
+    }
+  }
+}
+
+.actionAllWrap {
+  margin-bottom: 100px;
+}
+
+.title2 {
+  color: #000;
+}
+
+.info-block {
+  margin-bottom: 10px;
+}
+
+.spanVictim {
+  background: #f9d2c0;
+  color: rgb(225, 109, 50);
+  // background: #cdf3cd;
+  // color: #19d817;
+  border-radius: 16px;
+  border: none;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+.spanAttacker {
+  background: rgb(249, 209, 222);
+  color: rgb(204, 82, 82);
+  // background: #f9dcdc;
+  // color: #fd1515;
+  border-radius: 16px;
+  border: none;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+.locationSpan {
+  // display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-image: url('/image/location/内网.svg');
+  padding: 10px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.spanSucc {
+  font-size: 12px;
+  padding: 1px 5px;
+  color: #f00;
+  background-color: #f9dcdc;
+  border: 1px solid #f79999;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.spanErr {
+  font-size: 12px;
+  padding: 1px 5px;
+  color: #7f7f7f;
+  background-color: #f1f1f1;
+  border: 1px solid #bbb8b8;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.spanNot {
+  font-size: 12px;
+  padding: 1px 5px;
+  color: #188bec;
+  background-color: #dbecfb;
+  border: 1px solid #8ac6fd;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.popCon {
+  p {
+    line-height: 20px;
+  }
+  .name {
+    margin-right: 5px;
+  }
+}

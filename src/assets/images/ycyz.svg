@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>预测阈值</title>
+    <g id="预测阈值" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="椭圆形备份-6" fill="#EEF0F2" opacity="0.7" cx="21" cy="20.9297659" rx="21" ry="20.9297659"></ellipse>
+        <g id="预测阔值16" transform="translate(9.030201, 9.000000)">
+            <rect id="矩形" x="0" y="0" width="24.0805369" height="24"></rect>
+            <g id="预测阔值" transform="translate(1.505034, 0.000000)">
+                <rect id="矩形" stroke="#262629" x="0.5" y="0.5" width="20.0704698" height="23"></rect>
+                <ellipse id="椭圆形" stroke="#262629" stroke-linecap="round" cx="6.37658954" cy="6.57142857" rx="2.49518721" ry="2.57142857"></ellipse>
+                <polyline id="路径-5" stroke="#262629" stroke-linecap="round" points="3.88140233 17.3714286 7.47096655 13.7238547 12.2483131 13.7238547 16.6345814 7.86285714"></polyline>
+                <ellipse id="椭圆形" fill="#262629" cx="16.5553691" cy="7.5" rx="1.50503356" ry="1.5"></ellipse>
+                <line x1="3.32691628" y1="20.5714286" x2="18.2980396" y2="20.5714286" id="路径-2" stroke="#262629" stroke-dasharray="2"></line>
+            </g>
+        </g>
+    </g>
+</svg>

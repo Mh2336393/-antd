@@ -1,0 +1,46 @@
+{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "exists": {
+                        "field": "alert_mode"
+                    }
+                },
+                {
+                    "range": {
+                        "timestamp": {
+                            "gte": 1600160101346,
+                            "lte": 1600246501347
+                        }
+                    }
+                }
+            ],
+            "must_not": []
+        }
+    },
+    "sort": {
+        "timestamp": "desc"
+    },
+    "aggs": {
+        "signature": {
+            "terms": {
+                "field": "alert.signature"
+            },
+            "aggs": {
+                "eventNums": {
+                    "date_histogram": {
+                        "field": "timestamp",
+                        "interval":"1h",
+                        "time_zone": "Asia/Shanghai",
+                        "min_doc_count": 0,
+                        "extended_bounds": {
+                            "min": 1600160101346,
+                            "max": 1600246501347
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

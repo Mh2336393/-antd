@@ -1,0 +1,952 @@
+@import '~@/utils.less';
+
+@font-face {
+  font-family: 'Dinpro';
+  src: url('/fonteditor/fonteditor.eot');
+  src: url('/fonteditor/fonteditor.eot?#iefix') format('embedded-opentype'),
+    url('/fonteditor/fonteditor.woff') format('woff'),
+    url('/fonteditor/fonteditor.ttf') format('truetype'),
+    url('/fonteditor/fonteditor.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'PingFangSC', 'Dinpro', 'Microsoft YaHei', sans-serif;
+  font-size: @font-size-base;
+  // color: @font-color-base1;
+  color: #000;
+}
+
+#root {
+  height: 100%;
+}
+
+//**中间部分为 20190504 之前的global.less内容*******************
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+canvas {
+  display: block;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+.innerContent {
+  background: #f2f2f2;
+  min-height: 320px;
+}
+
+.ant-tabs-nav {
+  padding: 6px 10px;
+  margin: 7px 34px 0 0;
+}
+
+.tableContentWrapper {
+  margin: 12px;
+  background-color: #fff;
+}
+
+.filterwrap {
+  border-bottom: 1px solid #d9deeb;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.contentwrap {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  min-height: 800px;
+}
+
+.ant-layout-content {
+  overflow-y: hidden;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+  height: 56px;
+}
+
+//**end*****************************************************
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.pjHeader {
+  .headerCustom;
+}
+
+.pjTitle {
+  .titleCustom;
+}
+
+.font-red {
+  color: @font-color-red;
+}
+
+.fontRed {
+  color: @font-color-red;
+}
+
+.fontBlue {
+  color: @font-color-blue;
+}
+
+.fontGreen {
+  color: @font-color-green;
+}
+
+.fontYellow {
+  color: @font-color-yellow;
+}
+
+.fontBase {
+  color: @font-color-base;
+}
+
+// 表格列不想换行，超过宽度省略号显示的样式
+td .ellipsis {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.limitWidthFst {
+  max-width: 120px;
+}
+
+.limitWidthSec {
+  max-width: 150px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  min-width: 1000px;
+  height: 100%;
+  background: #f2f2f2;
+  padding: 0;
+}
+
+.mainContent {
+  padding: 30px 20px;
+}
+
+.popContent {
+  width: 220px;
+}
+
+.popContentWrap {
+  width: 100%;
+  min-width: 120px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.columnFilterWrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.gj-top5-status {
+  width: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.gj-top5-status-4 {
+  background: #ff4056;
+}
+
+.gj-top5-status-3 {
+  background: #f6a70a;
+}
+
+.gj-top5-status-2 {
+  background: #7352ff;
+}
+
+.gj-top5-status-1 {
+  background: #5075ff;
+}
+
+.dotGreen {
+  .dotIcon(@font-color-green);
+}
+
+.dotRed {
+  .dotIcon(#fd3535);
+}
+
+.dotBlue {
+  .dotIcon(@bg-color-blue);
+}
+
+.dotYellow {
+  .dotIcon(@font-color-yellow);
+}
+
+.dotGray {
+  .dotIcon(@bg-color-gray);
+}
+
+.divider {
+  display: inline-block;
+  border-right: 1px solid #999;
+  width: 1px;
+  height: 10px;
+  margin: 0 3px;
+}
+
+.iconHelp {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle; // background: url('./assets/images/icon_help.png') 0 0 no-repeat;
+}
+
+.tableBlock {
+  margin-top: 20px;
+  padding: 0 20px;
+  border: 1px solid @border-color-gray;
+  background: #fff;
+  min-height: 600px;
+
+  .handleBlock {
+    height: 54px;
+    display: flex;
+    align-items: center; // border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    color: #484862;
+  }
+
+  .handleBlockwithSearch {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #484862;
+  }
+
+  .handleItem {
+    display: inline-block;
+    padding: 0 10px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    font-size: 12px;
+    background: #4760f9;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .action {
+    color: @font-color-blue;
+
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+// .spinStyle {
+//   display: flex;
+//   width: 100%;
+//   height: 100%;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.slideBtn {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  line-height: 180px;
+  height: 100%;
+  width: 20px;
+  padding-left: 3px;
+  background: #fff;
+}
+
+.spinStyle {
+  display: flex;
+  width: '100%';
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-xl {
+  // height: 100%;
+  .assetTdWithWidth {
+    width: 140px;
+  }
+
+  .threatTdWithWidth {
+    width: 100px;
+  }
+
+  .riskTdWithWidth {
+    width: 180px;
+  }
+
+  .bannerList {
+    width: 1400px;
+  }
+
+  .slideBtn {
+    display: block;
+  }
+}
+
+.screen-xxl {
+  .assetTdWithWidth {
+    width: 150px;
+  }
+
+  .threatTdWithWidth {
+    width: 180px;
+  }
+
+  .riskTdWithWidth {
+    width: 220px;
+  }
+
+  .bannerList {
+    width: 1400px;
+  }
+
+  .slideBtn {
+    display: block;
+  }
+}
+
+.screen-lg {
+  // height:100%;
+  //小屏幕兼容
+  .assetTdWithWidth {
+    width: 120px;
+  }
+
+  .threatTdWithWidth {
+    width: 100px;
+  }
+
+  .riskTdWithWidth {
+    width: 140px;
+  }
+
+  .bannerList {
+    width: 1200px;
+  }
+
+  .slideBtn {
+    display: block;
+  }
+}
+
+.TableTdPaddingWrap {
+  margin: 12px 12px;
+  background-color: #fff;
+  min-height: 90%;
+  padding: 20px 24px;
+
+  :global {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      padding: 12px 8px;
+    }
+  }
+}
+
+.contentWraper {
+  height: 100%;
+}
+
+.filterBlock {
+  background-color: #fff;
+  border-top: 1px solid #d9deeb;
+  padding: 24px;
+}
+
+.filterWrap {
+  background: #fff;
+  padding: 11px 24px 2px 24px;
+}
+
+.commonButton {
+  .commonBlueButton;
+}
+
+.commonButton:hover {
+  .blueBtnHover;
+}
+
+.commonButton:focus {
+  .blueBtnHover;
+}
+
+.commonWhiteBtn {
+  .commonWhiteButton;
+}
+
+.commonWhiteBtn:hover {
+  .whiteBtnHover;
+}
+
+.commonWhiteBtn:focus {
+  .whiteBtnHover;
+}
+
+.smallBlueBtn {
+  .commonBlueButton(80px, 26px);
+}
+
+.smallBlueBtn:hover {
+  .blueBtnHover;
+}
+
+.smallBlueBtn:focus {
+  .blueBtnHover;
+}
+
+.smallBlueBtn[disabled] {
+  .btnDisable;
+}
+
+.smallWhiteBtn {
+  .commonWhiteButton(80px, 26px);
+}
+
+.smallWhiteBtn:hover {
+  .whiteBtnHover;
+}
+
+.smallWhiteBtn:focus {
+  .whiteBtnHover;
+}
+
+.smallWhiteBtn[disabled] {
+  .btnDisable;
+}
+
+.dropBlueBtn {
+  .commonBlueButton;
+  padding-left: 15px;
+  color: #e1e9fb;
+
+  i {
+    padding-left: 15px;
+  }
+}
+
+.ant-layout-header {
+  line-height: 48px !important;
+  background: #383648 !important;
+}
+
+.dropBlueBtn:hover {
+  .blueBtnHover;
+}
+
+.dropBlueBtn[disabled] {
+  .btnDisable;
+}
+
+.dropWhiteBtn {
+  .commonWhiteButton;
+  padding-left: 15px;
+
+  i {
+    padding-left: 15px;
+  }
+}
+
+.dropWhiteBtn[disabled] {
+  .btnDisable;
+}
+
+.breakall {
+  word-break: break-all !important;
+}
+
+/* stylelint-disable selector-no-vendor-prefix, property-no-vendor-prefix, value-no-vendor-prefix */
+
+/* stylelint-disable declaration-block-no-duplicate-properties */
+
+/* stylelint-disable comment-empty-line-before */
+
+.breakall-limitline {
+  -webkit-line-clamp: 2;
+
+  /* autoprefixer: ignore next */
+
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+}
+
+:global {
+  *::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    // outline         : 1px solid slategrey;
+  }
+
+  body {
+    background: #f0f2f5;
+  }
+
+  .container {
+    // margin: 12px;
+    background-color: #f2f2f2;
+  }
+
+  .commonHeader {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 24px;
+    font-size: 20px;
+    color: @font-color-base1;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+  }
+
+  .commonDetailHeader {
+    height: 48px;
+    display: flex;
+    color: @font-header;
+    border-bottom: 1px solid @header_border-color-gray;
+    align-items: center;
+    font-size: 14px;
+    padding: 28px;
+
+    .divider {
+      width: 1px;
+      height: 14px;
+      display: inline-block;
+      margin: 0 12px;
+      background-color: #d9deeb;
+    }
+  }
+
+  .tabStyle {
+    :global {
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td {
+        word-break: break-all !important;
+        // padding: 12px 12px !important;
+      }
+
+      .ant-tabs-bar {
+        margin-bottom: 20px;
+      }
+
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+        padding: 0 20px;
+        border: 0;
+        transition: all 0s;
+      }
+
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+        border: 1px solid #e8e8e8;
+        border-bottom: 1px solid #fff;
+        background-color: #fff !important;
+        color: #3d404e;
+        font-weight: bold;
+      }
+
+      .ant-tabs-nav .ant-tabs-tab:hover {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+
+  .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+  .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+  .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td,
+  .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+    background: #ecf3ff !important;
+  }
+
+  .ant-card-meta-avatar {
+    padding-right: 24px !important;
+  }
+
+  .ant-popover-inner,
+  .ant-input-number,
+  .ant-input-group-addon,
+  .ant-select-selection,
+  .ant-input {
+    border-radius: 0 !important;
+  }
+}
+
+.ant-table-selection-column {
+  text-align: center;
+  min-width: 56px !important;
+  width: 56px !important;
+}
+
+.ant-select-dropdown-menu-item:hover {
+  background: #ecf3ff !important;
+}
+
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  background: #383648 !important;
+}
+
+.ant-progress-inner {
+  border-radius: 0 !important;
+}
+
+// 表格头部文字颜色
+.ant-table-thead > tr > th {
+  color: #7d7d7d !important;
+  background: #f0f2f5 !important;
+}
+
+.ant-table {
+  color: #000 !important;
+}
+
+.ant-table-tbody > tr > td {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.ant-btn {
+  box-shadow: none !important;
+  border-radius: 0;
+}
+
+.redCheck {
+  :global {
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: rgb(222, 73, 73);
+      border-color: rgb(222, 73, 73);
+    }
+
+    .ant-checkbox-inner::after {
+      width: 9.14285714px !important;
+      height: 5.71428571px !important;
+    }
+
+    .ant-checkbox-checked::after {
+      border: 1px solid rgb(222, 73, 73) !important;
+    }
+
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+      border-color: rgb(222, 73, 73) !important;
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner::after {
+      border-top: 0 !important;
+      border-right: 0 !important;
+      border-left: 0 !important;
+      transform: rotate(0) scale(1) translate(-27%, 35%) !important;
+    }
+  }
+}
+
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
+// v2 soc button
+.v2-soc-button {
+  :global {
+    min-width: 88px;
+    min-height: 32px;
+    border: 0;
+    border-radius: 0;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  &.primary {
+    background: #0a4bcc;
+    font-family: 'PingFangSC MicrosoftYaHei';
+    font-size: 14px;
+    color: #fff;
+    // line-height: 13px;
+  }
+
+  &.default {
+    background: #e6e7eb;
+    font-family: 'PingFangSC MicrosoftYaHei';
+    font-size: 14px;
+    color: #121212;
+    // line-height: 13px;
+
+    &.ant-btn-disabled,
+    &.ant-btn.disabled,
+    &.ant-btn[disabled],
+    &.ant-btn-disabled:hover,
+    &.ant-btn.disabled:hover,
+    &.ant-btn[disabled]:hover,
+    &.ant-btn-disabled:focus,
+    &.ant-btn.disabled:focus,
+    &.ant-btn[disabled]:focus,
+    &.ant-btn-disabled:active,
+    &.ant-btn.disabled:active,
+    &.ant-btn[disabled]:active,
+    &.ant-btn-disabled.active,
+    &.ant-btn.disabled.active,
+    &.ant-btn[disabled].active {
+      color: rgba(0, 0, 0, 0.25);
+      background-color: #f5f5f5;
+      border-color: #d9d9d9;
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.bigGrayBtnV2,
+.smallGrayBtnV2 {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #e6e7eb;
+  border-radius: 0;
+  background-color: #e6e7eb;
+  color: #121212;
+  cursor: pointer;
+}
+
+.smallGrayBtnV2 {
+  min-width: 88px;
+}
+
+.bigGrayBtnV2 {
+  min-width: 130px;
+}
+
+.smallGrayBtnV2:hover,
+.smallGrayBtnV2:focus,
+.bigGrayBtnV2:hover,
+.bigGrayBtnV2:focus {
+  background-color: #e6e7eb;
+  border: 1px solid #e6e7eb;
+  color: #121212;
+}
+
+.v2-yujie-flex {
+  display: flex;
+
+  &.row {
+    flex-direction: row;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.horizontal {
+    align-items: center;
+  }
+
+  &.vertical {
+    justify-content: center;
+  }
+}
+* {
+  scrollbar-color: #adadaf #e6e7eb; /* 滑块颜色  滚动条背景颜色 */
+  scrollbar-width: thin; /* 滚动条宽度有三种：thin、auto、none */
+}
+
+/*ai相关模块的样式*****************start*/
+
+.analysis-state-icon-item {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dnsBlue {
+  .mixin-icon-image('./assets/images/dns/blue.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.dnsGreen {
+  .mixin-icon-image('./assets/images/dns/green.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.dnsGrey {
+  .mixin-icon-image('./assets/images/dns/grey.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.dnsRed {
+  .mixin-icon-image('./assets/images/dns/red.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.httpBlue {
+  .mixin-icon-image('./assets/images/http/blue.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.httpGreen {
+  .mixin-icon-image('./assets/images/http/green.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.httpGrey {
+  .mixin-icon-image('./assets/images/http/grey.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.httpRed {
+  .mixin-icon-image('./assets/images/http/red.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.icmpBlue {
+  .mixin-icon-image('./assets/images/icmp/blue.svg', 35px, 30px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.icmpGreen {
+  .mixin-icon-image('./assets/images/icmp/green.svg', 35px, 30px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.icmpGrey {
+  .mixin-icon-image('./assets/images/icmp/grey.svg', 35px, 30px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.icmpRed {
+  .mixin-icon-image('./assets/images/icmp/red.svg', 35px, 30px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+
+  position: relative;
+}
+
+.rdpBlue {
+  .mixin-icon-image('./assets/images/rdp/blue.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.rdpGreen {
+  .mixin-icon-image('./assets/images/rdp/green.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.rdpGrey {
+  .mixin-icon-image('./assets/images/rdp/grey.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.rdpRed {
+  .mixin-icon-image('./assets/images/rdp/red.svg', 38px, 38px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.sshBlue {
+  .mixin-icon-image('./assets/images/ssh/blue.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.sshGreen {
+  .mixin-icon-image('./assets/images/ssh/green.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.sshGrey {
+  .mixin-icon-image('./assets/images/ssh/grey.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.sshRed {
+  .mixin-icon-image('./assets/images/ssh/red.svg', 35px, 35px);
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+/*ai相关模块的样式*****************end*/

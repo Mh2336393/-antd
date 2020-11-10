@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>偏离程度</title>
+    <g id="偏离程度" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="椭圆形备份-6" fill="#EEF0F2" opacity="0.7" cx="21" cy="20.9297659" rx="21" ry="20.9297659"></ellipse>
+        <g id="偏离程度" transform="translate(9.030201, 9.000000)">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <rect id="矩形" stroke="#000000" x="0.5" y="2" width="23" height="15.5"></rect>
+            <rect id="矩形" stroke="#000000" x="11" y="20" width="2" height="2"></rect>
+            <line x1="1.51863098" y1="21" x2="22.502299" y2="21" id="路径-10" stroke="#000000"></line>
+            <line x1="4" y1="14.3625" x2="20" y2="14.3625" id="路径-7" stroke="#000000" stroke-dasharray="2"></line>
+            <g id="编组" transform="translate(12.243353, 8.250000) rotate(-315.000000) translate(-12.243353, -8.250000) translate(8.493353, 3.000000)" stroke-linecap="round">
+                <polyline id="路径" stroke="#000000" transform="translate(3.920544, 4.740088) rotate(-45.000000) translate(-3.920544, -4.740088) " points="1.42649173 2.27914977 6.41459671 2.27914977 6.41459671 7.20102605"></polyline>
+                <line x1="4.16736755" y1="2.07003788" x2="4.16736755" y2="9.94503788" id="路径-8" stroke="#0A0A0A"></line>
+            </g>
+            <line x1="12" y1="16.5" x2="12" y2="19.5536013" id="路径-11" stroke="#000000"></line>
+        </g>
+    </g>
+</svg>

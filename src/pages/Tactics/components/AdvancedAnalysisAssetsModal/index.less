@@ -1,0 +1,43 @@
+// @import '~@/common/styles/default';
+@import '~@/utils.less';
+
+.stepsAction {
+    display        : flex;
+    justify-content: flex-end;
+    margin-top     : 10px;
+    padding-top    : 10px;
+}
+
+.completeBox {
+    display        : flex;
+    justify-content: center;
+    padding        : 120px 0;
+    flex-wrap      : wrap;
+    height         : 600px;
+
+    .circle {
+        background-size    : contain;
+        background-repeat  : no-repeat;
+        background-position: center;
+        padding            : 80px;
+        vertical-align     : top;
+        background-image   : url(../../../../assets/images/complete.svg);
+    }
+
+    .title {
+        width     : 100%;
+        text-align: center;
+        font-size : 24px;
+        color     : rgb(32, 189, 89);
+    }
+
+    .des {
+        width     : 100%;
+        text-align: center;
+        font-size : 16px;
+
+        .num {
+            color: rgb(32, 189, 89);
+        }
+    }
+}

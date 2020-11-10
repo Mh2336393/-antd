@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>实际值</title>
+    <g id="实际值" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="椭圆形备份-6" fill="#EEF0F2" opacity="0.7" cx="21" cy="20.9297659" rx="21" ry="20.9297659"></ellipse>
+        <g id="实际值" transform="translate(9.000000, 9.000000)">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <path d="M22,5 L22,19 L17,19 L17,5 L22,5 Z" id="矩形备份-2" stroke="#262629"></path>
+            <path d="M7,8 L7,19 L2,19 L2,8 L7,8 Z" id="矩形备份-3" stroke="#262629"></path>
+            <path d="M14.5,2 L14.5,19 L9.5,19 L9.5,2 L14.5,2 Z" id="矩形备份-4" stroke="#262629"></path>
+            <line x1="1.51863098" y1="22.0644817" x2="22.502299" y2="22.0644817" id="路径-10" stroke="#000000"></line>
+        </g>
+    </g>
+</svg>

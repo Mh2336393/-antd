@@ -1,0 +1,414 @@
+[
+  {
+    "value": "修改访问控制",
+    "key": "Access Control Modification"
+  },
+  {
+    "value": "操纵账户",
+    "key": "Account Manipulation"
+  },
+  {
+    "value": "异常访问失败",
+    "key": "Anomalous Access Failure"
+  },
+  {
+    "value": "异常的基础设施事件",
+    "key": "Anomalous Infrastructure Event"
+  },
+  {
+    "value": "异常的基础设施更新",
+    "key": "Anomalous Infrastructure Update"
+  },
+  {
+    "value": "异常的用户活动",
+    "key": "Anomalous User Activity"
+  },
+  {
+    "value": "异常的用户行为",
+    "key": "Anomalous User Behavior"
+  },
+  {
+    "value": "匿名频道",
+    "key": "Anonymous Channel"
+  },
+  {
+    "value": "资产更新",
+    "key": "Asset Update"
+  },
+  {
+    "value": "检测到攻击工具",
+    "key": "Attack Tool Detected"
+  },
+  {
+    "value": "授权绕过",
+    "key": "Authorization Bypass"
+  },
+  {
+    "value": "后门",
+    "key": "Backdoor"
+  },
+  {
+    "value": "二进制劫持",
+    "key": "Binary Hijacking"
+  },
+  {
+    "value": "僵尸网络感染",
+    "key": "Botnet Infection"
+  },
+  {
+    "value": "暴力尝试登录",
+    "key": "Brute Force Authentication"
+  },
+  {
+    "value": "暴力尝试登录 - 通过黑客工具",
+    "key": "Brute Force Authentication - Hacking Tool"
+  },
+  {
+    "value": "暴力枚举许可",
+    "key": "Brute Force Permission Enumeration"
+  },
+  {
+    "value": "批量数据复制",
+    "key": "Bulk Data Replication"
+  },
+  {
+    "value": "连接恶意域名",
+    "key": "C&C Communication"
+  },
+  {
+    "value": "连接恶意域名 - Sinkhole",
+    "key": "C&C Communication - Sinkhole"
+  },
+  {
+    "value": "客户端利用漏洞 - 已知漏洞",
+    "key": "Client Side Exploit - Known Vulnerability"
+  },
+  {
+    "value": "代码执行",
+    "key": "Code Execution"
+  },
+  {
+    "value": "配置变更",
+    "key": "Configuration Change"
+  },
+  {
+    "value": "配置修改",
+    "key": "Configuration Modification"
+  },
+  {
+    "value": "隐蔽通道",
+    "key": "Covert Channel"
+  },
+  {
+    "value": "凭证滥用",
+    "key": "Credential Abuse"
+  },
+  {
+    "value": "凭证访问",
+    "key": "Credential Access"
+  },
+  {
+    "value": "凭证误用",
+    "key": "Credential Misuse"
+  },
+  {
+    "value": "数据泄露",
+    "key": "Data Exfiltration"
+  },
+  {
+    "value": "默认凭证",
+    "key": "Default Credentials"
+  },
+  {
+    "value": "防御规避 - 掩盖踪迹",
+    "key": "Defense Evasion - Cover Tracks"
+  },
+  {
+    "value": "防御规避 - 禁用安全工具",
+    "key": "Defense Evasion - Disabling Security Tools"
+  },
+  {
+    "value": "防御规避 - 删除文件",
+    "key": "Defense Evasion - File Deletion"
+  },
+  {
+    "value": "防御规避 - 伪装",
+    "key": "Defense Evasion - Masquerading"
+  },
+  {
+    "value": "防御规避 - 混淆命令",
+    "key": "Defense Evasion - Obfuscated Command"
+  },
+  {
+    "value": "防御规避 - 系统工具",
+    "key": "Defense Evasion - System Tool"
+  },
+  {
+    "value": "拒绝服务 - 黑客工具",
+    "key": "Denial of Service - Hacking Tool"
+  },
+  {
+    "value": "拒绝服务 - 已知漏洞",
+    "key": "Denial of Service - Known Vulnerability"
+  },
+  {
+    "value": "拒绝服务 - 资源耗尽",
+    "key": "Denial of Service - Resource Exhaustion"
+  },
+  {
+    "value": "桌面软件 - 比特币",
+    "key": "Desktop Software - Bitcoin"
+  },
+  {
+    "value": "桌面软件 - 聊天客户端",
+    "key": "Desktop Software - Chat Client"
+  },
+  {
+    "value": "桌面软件 - 文件共享",
+    "key": "Desktop Software - File Sharing"
+  },
+  {
+    "value": "桌面软件 - 游戏终端",
+    "key": "Desktop Software - Games"
+  },
+  {
+    "value": "桌面软件 - P2P",
+    "key": "Desktop Software - P2P"
+  },
+  {
+    "value": "桌面软件 - 远程桌面",
+    "key": "Desktop Software - Remote Desktop"
+  },
+  {
+    "value": "DLL注入",
+    "key": "DLL Injection"
+  },
+  {
+    "value": "执行被阻止",
+    "key": "Execution Blocked"
+  },
+  {
+    "value": "漏洞利用-已知漏洞",
+    "key": "Exploit - Known Vulnerability"
+  },
+  {
+    "value": "漏洞利用工具包",
+    "key": "Exploit Kit"
+  },
+  {
+    "value": "文件下载 - 可疑主机",
+    "key": "File Download - Poor Reputation Host"
+  },
+  {
+    "value": "黑客工具",
+    "key": "Hacking Tool"
+  },
+  {
+    "value": "工控系统 - 已知漏洞",
+    "key": "ICS - Known Vulnerability"
+  },
+  {
+    "value": "信息收集",
+    "key": "Information Gathering"
+  },
+  {
+    "value": "已知的恶意基础设施",
+    "key": "Known Malicious Infrastructure"
+  },
+  {
+    "value": "横向渗透",
+    "key": "Lateral Movement"
+  },
+  {
+    "value": "恶意文件",
+    "key": "Malicious File"
+  },
+  {
+    "value": "恶意网络活动",
+    "key": "Malicious Network Activity"
+  },
+  {
+    "value": "恶意网站",
+    "key": "Malicious Website"
+  },
+  {
+    "value": "病毒感染",
+    "key": "Malware Infection"
+  },
+  {
+    "value": "RAT木马病毒",
+    "key": "Malware RAT"
+  },
+  {
+    "value": "网络访问控制修改",
+    "key": "Network Access Control Modification"
+  },
+  {
+    "value": "网络异常",
+    "key": "Network Anomaly"
+  },
+  {
+    "value": "网络异常 - 预期外的端口协议",
+    "key": "Network Anomaly - Protocol on Unexpected Port"
+  },
+  {
+    "value": "网络攻击",
+    "key": "Network Attack"
+  },
+  {
+    "value": "网络攻击 - Windows域控制器",
+    "key": "Network Attack - Windows Domain Controller"
+  },
+  {
+    "value": "网络协议攻击",
+    "key": "Network Protocol Attack"
+  },
+  {
+    "value": "创建了新的API凭据",
+    "key": "New API Credentials Created"
+  },
+  {
+    "value": "创建新用户",
+    "key": "New User Creation"
+  },
+  {
+    "value": "Pentesting工具请求",
+    "key": "Pentesting Tool Request"
+  },
+  {
+    "value": "钓鱼",
+    "key": "Phishing"
+  },
+  {
+    "value": "端口扫描",
+    "key": "Portscan"
+  },
+  {
+    "value": "提权",
+    "key": "Privilege Escalation"
+  },
+  {
+    "value": "公共可访问资源",
+    "key": "Publicly Accessible Resource"
+  },
+  {
+    "value": "勒索病毒感染",
+    "key": "Ransomware Infection"
+  },
+  {
+    "value": "远程终端",
+    "key": "Remote Shell"
+  },
+  {
+    "value": "SCADA系统 - 漏洞尝试",
+    "key": "SCADA - Exploit Attempt"
+  },
+  {
+    "value": "关键安全基础架构更新",
+    "key": "Security Critical Infrastructure Update"
+  },
+  {
+    "value": "安全政策违规",
+    "key": "Security Policy Violation"
+  },
+  {
+    "value": "敏感数据 - 明文传输",
+    "key": "Sensitive Data - Cleartext Transmission"
+  },
+  {
+    "value": "敏感数据 - 配置文件",
+    "key": "Sensitive Data - Configuration File"
+  },
+  {
+    "value": "敏感数据 - 明文凭证",
+    "key": "Sensitive Data - Credentials in Cleartext"
+  },
+  {
+    "value": "敏感数据泄露",
+    "key": "Sensitive Data Disclosure"
+  },
+  {
+    "value": "服务发现",
+    "key": "Service Discovery"
+  },
+  {
+    "value": "可疑行为",
+    "key": "Suspicious Behavior"
+  },
+  {
+    "value": "可疑的下载",
+    "key": "Suspicious Download"
+  },
+  {
+    "value": "可疑的安全关键事件",
+    "key": "Suspicious Security Critical Event"
+  },
+  {
+    "value": "系统错误",
+    "key": "System Error"
+  },
+  {
+    "value": "系统持久化",
+    "key": "System Persistence"
+  },
+  {
+    "value": "未知",
+    "key": "Unknown"
+  },
+  {
+    "value": "用户权限修改",
+    "key": "User Permission Modification"
+  },
+  {
+    "value": "VOIP服务 - 黑客工具",
+    "key": "VOIP Service - Hacking Tool"
+  },
+  {
+    "value": "易受攻击的软件",
+    "key": "Vulnerable Software"
+  },
+  {
+    "value": "软件开发漏洞",
+    "key": "Vulnerable Software Exploitation"
+  },
+  {
+    "value": "弱配置 - 特权帐户暴露",
+    "key": "Weak Configuration - Privileged Account Exposure"
+  },
+  {
+    "value": "弱配置 - 易受攻击的身份验证",
+    "key": "Weak Configuration - Vulnerable Authentication"
+  },
+  {
+    "value": "Web攻击",
+    "key": "Web Attack"
+  },
+  {
+    "value": "Web攻击 - 发现",
+    "key": "Web Attack - Discovery"
+  },
+  {
+    "value": "Web攻击 - SQL注入",
+    "key": "Web Attack - SQL Injection"
+  },
+  {
+    "value": "Web攻击 - SQL服务器UNC路径注入",
+    "key": "Web Attack - SQL Server UNC Path Injection"
+  },
+  {
+    "value": "Web攻击 - 命令注入",
+    "key": "Web Attack - CMD Injection"
+  },
+  {
+    "value": "Web攻击 - XSS攻击",
+    "key": "Web Attack - Persistent XSS"
+  },
+  {
+    "value": "Web漏洞扫描",
+    "key": "Web Vulnerability Scanning"
+  },
+  {
+    "value": "Webshell",
+    "key": "Webshell"
+  }
+]

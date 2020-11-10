@@ -1,0 +1,127 @@
+@import '~@/utils.less';
+
+.wrapper {
+  display       : flex;
+  flex-direction: column;
+
+  h3 {
+    font-family  : 'PingFangSC-Regular';
+    font-size    : 14px;
+    color        : rgba(0, 0, 0, 0.5);
+    line-height  : 20px;
+    margin-bottom: 8px;
+
+    span {
+      font-family: 'PingFangSC-Regular';
+      font-size  : 14px;
+      color      : #262626;
+      line-height: 20px;
+      margin     : 0px 4px;
+    }
+
+    em {
+      font-style : normal;
+      font-family: 'PingFangSC-Regular';
+      font-size  : 14px;
+      line-height: 20px;
+      margin     : 0px 4px;
+    }
+  }
+
+  .content {
+    display        : flex;
+    flex-direction : row;
+    align-content  : center;
+    justify-content: space-between;
+
+    .content_box {
+      width          : 32.3%;
+      border         : 1px solid #e8e9ea;
+      border-radius  : 2px;
+      height         : 80px;
+      display        : flex;
+      flex-direction : row;
+      align-items    : center;
+      justify-content: center;
+
+      .icon_wrapper {
+        width          : 42px;
+        height         : 42px;
+        border-radius  : 21px;
+        background     : #eef0f2;
+        opacity        : 0.7;
+        margin-right   : 14px;
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: center;
+
+        .plcd {
+          .mixin-icon-image('./assets/images/plcd.svg', 35px, 35px);
+          cursor         : pointer;
+          background-size: cover;
+          position       : relative;
+        }
+
+        .sjz {
+          .mixin-icon-image('./assets/images/sjz.svg', 35px, 35px);
+          cursor         : pointer;
+          background-size: cover;
+          position       : relative;
+        }
+
+        .ycyz {
+          .mixin-icon-image('./assets/images/ycyz.svg', 35px, 35px);
+          cursor         : pointer;
+          background-size: cover;
+          position       : relative;
+        }
+      }
+
+      .content_body {
+        .box_title {
+          font-family: 'PingFangSC-Regular';
+          font-size  : 14px;
+          color      : rgba(0, 0, 0, 0.5);
+
+          &::after {
+            content: ':';
+          }
+        }
+
+        .box_item {
+          font-family: 'PingFangSC-Semibold';
+          font-size  : 24px;
+          color      : rgba(0, 0, 0, 0.85);
+          line-height: 16px;
+
+          // &.orange {
+          //   color: #eb964b;
+          // }
+        }
+      }
+    }
+  }
+}
+
+
+.green {
+  color: #009f20 !important;
+}
+
+
+.textRange_0 {
+  color: #6c6e70 !important;
+}
+
+.textRange_1 {
+  color: #f29955 !important;
+}
+
+.textRange_2 {
+  color: #d04b2d !important;
+}
+
+.textRange_3 {
+  color: #b43122 !important;
+}
